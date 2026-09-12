@@ -1,0 +1,217 @@
+{
+  "checks": [
+    {
+      "name": "0.0.2-uses-own-cache",
+      "pass": true
+    },
+    {
+      "name": "0.0.2-full-municipality-accessible",
+      "pass": true
+    },
+    {
+      "name": "0.0.2-city-released-on-attraction",
+      "pass": true,
+      "detail": {
+        "disposed": {
+          "geometry": 161,
+          "materials": 155,
+          "instances": 29
+        },
+        "expected": {
+          "geometry": 161,
+          "materials": 155,
+          "instances": 29
+        },
+        "detached": true,
+        "sceneEmpty": true,
+        "oldDestroyed": true,
+        "active": {
+          "policy": "current-view-only",
+          "activeRegion": "#/scene/westlake",
+          "activeSceneIds": [
+            "westlake"
+          ],
+          "threeActive": true,
+          "geographicActive": false,
+          "exportsInProgress": 0,
+          "owned": {
+            "geometries": 103,
+            "materials": 103,
+            "textures": 0,
+            "instances": 0,
+            "other": 2
+          },
+          "threeMemory": {
+            "geometries": 103,
+            "textures": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "0.0.2-independent-scene-kept",
+      "pass": true
+    },
+    {
+      "name": "matching-camera-and-viewports",
+      "pass": true
+    },
+    {
+      "name": "continuous-shrubs-identical",
+      "pass": true,
+      "detail": {
+        "counts": [
+          3600,
+          3600
+        ]
+      }
+    },
+    {
+      "name": "no-browser-errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "versions": [
+    {
+      "version": "0.0.1",
+      "cacheHit": true,
+      "cacheKey": "a827360d6c184edc08b063b036ebec17787ae3c97a43f2d6eb9a7c423f676b79",
+      "buildingCount": 3380,
+      "trees": 6500,
+      "urbanTrees": 10000,
+      "shrubs": 3600,
+      "shrubMatrices": "7038e5c32ae2da5dd80030d6f7857e82489d76029a6df82b428ea3f70ffa24c3",
+      "shrubGeometry": "31c3b9a6c24b3ef4e2779d120f0324f250e55806fbc99c2b9cb2539e69b52b84",
+      "defaultCamera": [
+        10.867284347990104,
+        1.7277881036093146,
+        -5.636934247916
+      ],
+      "defaultTarget": [
+        10.519114777187013,
+        0.025625757460874622,
+        -7.5712096412665
+      ],
+      "poses": {
+        "main": {
+          "camera": [
+            10.867284347990104,
+            1.7277881036093146,
+            -5.636934247916
+          ],
+          "target": [
+            10.519114777187013,
+            0.025625757460874622,
+            -7.5712096412665
+          ]
+        },
+        "commercial": {
+          "camera": [
+            11.688815058379886,
+            1.7277881036093146,
+            -5.190495281934114
+          ],
+          "target": [
+            11.340645487576795,
+            0.02562575746087462,
+            -7.124770675284614
+          ]
+        },
+        "residential": {
+          "camera": [
+            10.515199757823435,
+            1.7277881036093146,
+            -6.2776598633638105
+          ],
+          "target": [
+            10.167030187020345,
+            0.025625757460874615,
+            -8.21193525671431
+          ]
+        }
+      },
+      "fullView": {
+        "distance": 56.00000000000001,
+        "ready": true
+      }
+    },
+    {
+      "version": "0.0.2",
+      "cacheHit": true,
+      "cacheKey": "9ded619e170d2029e39fe62f08f25f846af9eb9164c8457eb94a29a194149ebb",
+      "buildingCount": 3380,
+      "trees": 6500,
+      "urbanTrees": 10000,
+      "shrubs": 3600,
+      "shrubMatrices": "7038e5c32ae2da5dd80030d6f7857e82489d76029a6df82b428ea3f70ffa24c3",
+      "shrubGeometry": "31c3b9a6c24b3ef4e2779d120f0324f250e55806fbc99c2b9cb2539e69b52b84",
+      "defaultCamera": [
+        10.867284347990104,
+        1.7277881036093146,
+        -5.636934247916
+      ],
+      "defaultTarget": [
+        10.519114777187013,
+        0.025625757460874622,
+        -7.5712096412665
+      ],
+      "paletteSummary": {
+        "counts": {
+          "pearl": 1333,
+          "porcelain": 884,
+          "mineral": 1025,
+          "silver": 108,
+          "bluegrey": 30
+        },
+        "batches": 22,
+        "policy": "Coherent source-block display colours by available land use; not surveyed facade colours. Metal and reflective material properties retain the City Kit defaults."
+      },
+      "drawCalls": 67,
+      "poses": {
+        "main": {
+          "camera": [
+            10.867284347990104,
+            1.7277881036093146,
+            -5.636934247916
+          ],
+          "target": [
+            10.519114777187013,
+            0.025625757460874622,
+            -7.5712096412665
+          ]
+        },
+        "commercial": {
+          "camera": [
+            11.688815058379886,
+            1.7277881036093146,
+            -5.190495281934114
+          ],
+          "target": [
+            11.340645487576795,
+            0.02562575746087462,
+            -7.124770675284614
+          ]
+        },
+        "residential": {
+          "camera": [
+            10.515199757823435,
+            1.7277881036093146,
+            -6.2776598633638105
+          ],
+          "target": [
+            10.167030187020345,
+            0.025625757460874615,
+            -8.21193525671431
+          ]
+        }
+      },
+      "fullView": {
+        "distance": 56.00000000000001,
+        "ready": true
+      }
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

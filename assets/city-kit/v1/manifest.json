@@ -1,0 +1,1056 @@
+{
+  "schema": "city-kit-manifest-v1",
+  "version": "1.7.0",
+  "notice": "Original city-independent cartographic display assets, not surveyed buildings, species, road alignments or geographic evidence. Each compound contains one dominant principal building; edge gardens, plazas and service yards are authored motifs, not measured public land-use claims. Normalized compound footprint is 1 × 1, bottom 0, full height 1. Main-body dimensions identify the actual principal wall volume for renderer-scale calibration, not real architectural measurements.",
+  "source": {
+    "generator": "scripts/build-city-assets.mjs",
+    "sha256": "8c200c3210de2b113b1ce81d5deac93df4e9daf5c2ab8afc779550bf82c00679",
+    "threeRevision": "180"
+  },
+  "normalizedBuildings": {
+    "min": [
+      -0.5,
+      0,
+      -0.5
+    ],
+    "max": [
+      0.5,
+      1,
+      0.5
+    ],
+    "support": "continuous closed full-footprint base",
+    "instanceTint": false
+  },
+  "roadProfile": {
+    "roadColor": "#53646b",
+    "sideColor": "#b4b4a7",
+    "curbColor": "#e3d7b4",
+    "pierColor": "#b2a488",
+    "widthRatios": {
+      "motorway": 1,
+      "trunk": 0.84,
+      "primary": 0.62
+    },
+    "notice": "Style and primitive components only; source road routes, bridge tags and dimensions are supplied by each city."
+  },
+  "assets": [
+    {
+      "id": "residential-slab",
+      "name": "宽板住宅楼",
+      "family": "residential",
+      "variant": "slab",
+      "role": "ordinary-building",
+      "file": "residential-slab.json",
+      "bytes": 252277,
+      "sha256": "1f4b2a2d6622d3bce4eb92a1c4a4383496ab24ff068fb5e31f4bb52e265ce286",
+      "triangles": 1392,
+      "bounds": {
+        "min": [
+          -0.5,
+          0,
+          -0.5
+        ],
+        "max": [
+          0.5,
+          1,
+          0.5
+        ]
+      },
+      "displayUnit": "compound",
+      "buildingCount": 1,
+      "sharedSpace": "garden",
+      "previewHeightToWidth": 1.25,
+      "primaryHeightToWidth": [
+        3.6,
+        5.8
+      ],
+      "maxPrimarySlenderness": 6.6,
+      "primaryBody": {
+        "partName": "primary-building-body",
+        "triangleStart": 12,
+        "triangleCount": 12,
+        "bounds": {
+          "min": [
+            -0.4699999988079071,
+            0.012000000104308128,
+            -0.41999998688697815
+          ],
+          "max": [
+            0.4699999988079071,
+            0.9399999976158142,
+            0.3100000023841858
+          ]
+        },
+        "width": 0.9399999976158142,
+        "depth": 0.7299999892711639,
+        "height": 0.9279999975115061
+      },
+      "recommendedHeightToWidth": [
+        0.5,
+        2.5
+      ],
+      "recommendedDepthToWidth": [
+        0.65,
+        1.05
+      ],
+      "glb": {
+        "file": "residential-slab.glb",
+        "bytes": 161440,
+        "sha256": "1276cc906b5b435b56f337feefdd0a7b718ca6dd1a1773fa8d5f727a6db4497d"
+      }
+    },
+    {
+      "id": "residential-twins",
+      "name": "退台公寓楼",
+      "family": "residential",
+      "variant": "twins",
+      "role": "ordinary-building",
+      "file": "residential-twins.json",
+      "bytes": 149077,
+      "sha256": "bbd2f4e3754ad6523ec4b3acd6836553dc245e1aca09fa3492b56aa2017b9585",
+      "triangles": 804,
+      "bounds": {
+        "min": [
+          -0.5,
+          0,
+          -0.5
+        ],
+        "max": [
+          0.5,
+          1,
+          0.5
+        ]
+      },
+      "displayUnit": "compound",
+      "buildingCount": 1,
+      "sharedSpace": "garden",
+      "previewHeightToWidth": 2.15,
+      "primaryHeightToWidth": [
+        4.4,
+        6.6
+      ],
+      "maxPrimarySlenderness": 7.2,
+      "primaryBody": {
+        "partName": "primary-building-body",
+        "triangleStart": 12,
+        "triangleCount": 12,
+        "bounds": {
+          "min": [
+            -0.45500001311302185,
+            0.012000000104308128,
+            -0.45500001311302185
+          ],
+          "max": [
+            0.45500001311302185,
+            0.7300000190734863,
+            0.4050000011920929
+          ]
+        },
+        "width": 0.9100000262260437,
+        "depth": 0.8600000143051147,
+        "height": 0.7180000189691782
+      },
+      "recommendedHeightToWidth": [
+        0.7,
+        3.5
+      ],
+      "recommendedDepthToWidth": [
+        0.65,
+        1.1
+      ],
+      "glb": {
+        "file": "residential-twins.glb",
+        "bytes": 94408,
+        "sha256": "7a716a270061bb1a47a0f78e5af99343eb97567db356f1e90de1842653c0dcfa"
+      }
+    },
+    {
+      "id": "commercial-office",
+      "name": "切角玻璃办公塔楼",
+      "family": "commercial",
+      "variant": "office",
+      "role": "ordinary-building",
+      "file": "commercial-office.json",
+      "bytes": 222503,
+      "sha256": "ac82cb1b1df621a587ff1b49041e88c65d1b2169af15a019c64353d4544b6650",
+      "triangles": 1212,
+      "bounds": {
+        "min": [
+          -0.5,
+          0,
+          -0.5
+        ],
+        "max": [
+          0.5,
+          1,
+          0.5
+        ]
+      },
+      "displayUnit": "compound",
+      "buildingCount": 1,
+      "sharedSpace": "plaza",
+      "previewHeightToWidth": 3,
+      "primaryHeightToWidth": [
+        4.4,
+        6.8
+      ],
+      "maxPrimarySlenderness": 7.5,
+      "primaryBody": {
+        "partName": "primary-building-body",
+        "triangleStart": 128,
+        "triangleCount": 28,
+        "bounds": {
+          "min": [
+            -0.4399999976158142,
+            0.08500000089406967,
+            -0.41999998688697815
+          ],
+          "max": [
+            0.4399999976158142,
+            0.9769999980926514,
+            0.41999998688697815
+          ]
+        },
+        "width": 0.8799999952316284,
+        "depth": 0.8399999737739563,
+        "height": 0.8919999971985817
+      },
+      "recommendedHeightToWidth": [
+        1,
+        5
+      ],
+      "recommendedDepthToWidth": [
+        0.65,
+        1.05
+      ],
+      "glb": {
+        "file": "commercial-office.glb",
+        "bytes": 141272,
+        "sha256": "af29cad1101e752763ccdd3a91e482a6b4ee2a024925cc5db384b17b191bacbd"
+      }
+    },
+    {
+      "id": "commercial-block",
+      "name": "退台商业综合楼",
+      "family": "commercial",
+      "variant": "block",
+      "role": "ordinary-building",
+      "file": "commercial-block.json",
+      "bytes": 215891,
+      "sha256": "a42422c3fad386cd94f4c629ab78e4db17ea0234b88a30285f156959eaf58136",
+      "triangles": 1188,
+      "bounds": {
+        "min": [
+          -0.5,
+          0,
+          -0.5
+        ],
+        "max": [
+          0.5,
+          1,
+          0.5
+        ]
+      },
+      "displayUnit": "compound",
+      "buildingCount": 1,
+      "sharedSpace": "plaza",
+      "previewHeightToWidth": 1.2,
+      "primaryHeightToWidth": [
+        2.6,
+        4.6
+      ],
+      "maxPrimarySlenderness": 5.8,
+      "primaryBody": {
+        "partName": "primary-building-body",
+        "triangleStart": 12,
+        "triangleCount": 12,
+        "bounds": {
+          "min": [
+            -0.4749999940395355,
+            0.012000000104308128,
+            -0.46000000834465027
+          ],
+          "max": [
+            0.4749999940395355,
+            0.5899999737739563,
+            0.46000000834465027
+          ]
+        },
+        "width": 0.949999988079071,
+        "depth": 0.9200000166893005,
+        "height": 0.5779999736696482
+      },
+      "recommendedHeightToWidth": [
+        0.3,
+        2.5
+      ],
+      "recommendedDepthToWidth": [
+        0.65,
+        1.15
+      ],
+      "glb": {
+        "file": "commercial-block.glb",
+        "bytes": 138536,
+        "sha256": "d74387c9506b8442a3c19d14ad14f9b1d8c3aab8e57e21efa953fb1ba4ddcf18"
+      }
+    },
+    {
+      "id": "industrial-sheds",
+      "name": "单体生产厂房",
+      "family": "industrial",
+      "variant": "sheds",
+      "role": "ordinary-building",
+      "file": "industrial-sheds.json",
+      "bytes": 93455,
+      "sha256": "5debf66a370dc00c112ec1f6ac67800b64ecda17ee672b9269f814d2efe42f37",
+      "triangles": 504,
+      "bounds": {
+        "min": [
+          -0.5,
+          0,
+          -0.5
+        ],
+        "max": [
+          0.5,
+          1,
+          0.5
+        ]
+      },
+      "displayUnit": "compound",
+      "buildingCount": 1,
+      "sharedSpace": "yard",
+      "previewHeightToWidth": 0.4,
+      "primaryHeightToWidth": [
+        0.55,
+        0.9
+      ],
+      "maxPrimarySlenderness": 1.4,
+      "primaryBody": {
+        "partName": "primary-building-body",
+        "triangleStart": 12,
+        "triangleCount": 12,
+        "bounds": {
+          "min": [
+            -0.46000000834465027,
+            0.012000000104308128,
+            -0.4650000035762787
+          ],
+          "max": [
+            0.46000000834465027,
+            0.8299999833106995,
+            0.41499999165534973
+          ]
+        },
+        "width": 0.9200000166893005,
+        "depth": 0.8799999952316284,
+        "height": 0.8179999832063913
+      },
+      "recommendedHeightToWidth": [
+        0.1,
+        1
+      ],
+      "recommendedDepthToWidth": [
+        0.75,
+        1.15
+      ],
+      "glb": {
+        "file": "industrial-sheds.glb",
+        "bytes": 60200,
+        "sha256": "4adde1826f6cdd85916276bf1b70ba032a42ae67ab20c1fa6ae3177967f14472"
+      }
+    },
+    {
+      "id": "industrial-logistics",
+      "name": "单体仓储厂房",
+      "family": "industrial",
+      "variant": "logistics",
+      "role": "ordinary-building",
+      "file": "industrial-logistics.json",
+      "bytes": 66986,
+      "sha256": "bf4b69af45ca78e65a92acc525c983c1769abbee1554d137351c62e52fd91773",
+      "triangles": 372,
+      "bounds": {
+        "min": [
+          -0.5,
+          0,
+          -0.5
+        ],
+        "max": [
+          0.5,
+          1,
+          0.5
+        ]
+      },
+      "displayUnit": "compound",
+      "buildingCount": 1,
+      "sharedSpace": "yard",
+      "previewHeightToWidth": 0.42,
+      "primaryHeightToWidth": [
+        0.65,
+        1.05
+      ],
+      "maxPrimarySlenderness": 1.5,
+      "primaryBody": {
+        "partName": "primary-building-body",
+        "triangleStart": 12,
+        "triangleCount": 12,
+        "bounds": {
+          "min": [
+            -0.46000000834465027,
+            0.012000000104308128,
+            -0.4749999940395355
+          ],
+          "max": [
+            0.46000000834465027,
+            0.9399999976158142,
+            0.42500001192092896
+          ]
+        },
+        "width": 0.9200000166893005,
+        "depth": 0.9000000059604645,
+        "height": 0.9279999975115061
+      },
+      "recommendedHeightToWidth": [
+        0.1,
+        1
+      ],
+      "recommendedDepthToWidth": [
+        0.75,
+        1.2
+      ],
+      "glb": {
+        "file": "industrial-logistics.glb",
+        "bytes": 45512,
+        "sha256": "b289501c6bee351c0b761220f46f00e514d8db4c9f44eb762f89a31e1875da7f"
+      }
+    },
+    {
+      "id": "generic-courtyard",
+      "name": "围合庭院公共楼",
+      "family": "generic",
+      "variant": "courtyard",
+      "role": "ordinary-building",
+      "file": "generic-courtyard.json",
+      "bytes": 162853,
+      "sha256": "a762ec46d3e5ac09e9eb14af80bbbe1e9f6c5f18fea5d0fa39a54a41dae803a4",
+      "triangles": 896,
+      "bounds": {
+        "min": [
+          -0.5,
+          0,
+          -0.5
+        ],
+        "max": [
+          0.5,
+          1,
+          0.5
+        ]
+      },
+      "displayUnit": "compound",
+      "buildingCount": 1,
+      "sharedSpace": "garden",
+      "previewHeightToWidth": 0.8,
+      "primaryHeightToWidth": [
+        2.4,
+        4
+      ],
+      "maxPrimarySlenderness": 5.5,
+      "primaryBody": {
+        "partName": "primary-building-body",
+        "triangleStart": 12,
+        "triangleCount": 28,
+        "bounds": {
+          "min": [
+            -0.4699999988079071,
+            0.012000000104308128,
+            -0.4399999976158142
+          ],
+          "max": [
+            0.4699999988079071,
+            0.9459999799728394,
+            0.4399999976158142
+          ]
+        },
+        "width": 0.9399999976158142,
+        "depth": 0.8799999952316284,
+        "height": 0.9339999798685312
+      },
+      "recommendedHeightToWidth": [
+        0.3,
+        2
+      ],
+      "recommendedDepthToWidth": [
+        0.65,
+        1.05
+      ],
+      "glb": {
+        "file": "generic-courtyard.glb",
+        "bytes": 104896,
+        "sha256": "a4ee0cee5fadb02acc77ce7280a3d02ab84dade633371fa8c545026c26c33a81"
+      }
+    },
+    {
+      "id": "generic-stepped",
+      "name": "转角退台街坊楼",
+      "family": "generic",
+      "variant": "stepped",
+      "role": "ordinary-building",
+      "file": "generic-stepped.json",
+      "bytes": 195134,
+      "sha256": "93b90e118ecfa738b969dd1f8e88b344bb51f492d8ee45d4dc78b878e45f02dc",
+      "triangles": 1072,
+      "bounds": {
+        "min": [
+          -0.5,
+          0,
+          -0.5
+        ],
+        "max": [
+          0.5,
+          1,
+          0.5
+        ]
+      },
+      "displayUnit": "compound",
+      "buildingCount": 1,
+      "sharedSpace": "plaza",
+      "previewHeightToWidth": 1.35,
+      "primaryHeightToWidth": [
+        3.4,
+        5.6
+      ],
+      "maxPrimarySlenderness": 6.6,
+      "primaryBody": {
+        "partName": "primary-building-body",
+        "triangleStart": 12,
+        "triangleCount": 20,
+        "bounds": {
+          "min": [
+            -0.4699999988079071,
+            0.012000000104308128,
+            -0.4399999976158142
+          ],
+          "max": [
+            0.4699999988079071,
+            0.800000011920929,
+            0.4399999976158142
+          ]
+        },
+        "width": 0.9399999976158142,
+        "depth": 0.8799999952316284,
+        "height": 0.7880000118166208
+      },
+      "recommendedHeightToWidth": [
+        0.4,
+        3
+      ],
+      "recommendedDepthToWidth": [
+        0.65,
+        1.1
+      ],
+      "glb": {
+        "file": "generic-stepped.glb",
+        "bytes": 125316,
+        "sha256": "e8628e797ca03d684b9574d9cd43068754500fdf50efc1de3413c42b37d89f5f"
+      }
+    },
+    {
+      "id": "generic-ribbon",
+      "name": "带状幕墙办公楼",
+      "family": "generic",
+      "variant": "ribbon",
+      "role": "ordinary-building",
+      "file": "generic-ribbon.json",
+      "bytes": 160501,
+      "sha256": "2d71d8431b85a0cfd5bc9c619a5b80479d48d49c950a26ee729c20c47ae15278",
+      "triangles": 880,
+      "bounds": {
+        "min": [
+          -0.5,
+          0,
+          -0.5
+        ],
+        "max": [
+          0.5,
+          1,
+          0.5
+        ]
+      },
+      "displayUnit": "compound",
+      "buildingCount": 1,
+      "sharedSpace": "plaza",
+      "previewHeightToWidth": 1.1,
+      "primaryHeightToWidth": [
+        3,
+        4.8
+      ],
+      "maxPrimarySlenderness": 6.3,
+      "primaryBody": {
+        "partName": "primary-building-body",
+        "triangleStart": 204,
+        "triangleCount": 28,
+        "bounds": {
+          "min": [
+            -0.4699999988079071,
+            0.012000000104308128,
+            -0.4000000059604645
+          ],
+          "max": [
+            0.4699999988079071,
+            0.9639999866485596,
+            0.4000000059604645
+          ]
+        },
+        "width": 0.9399999976158142,
+        "depth": 0.800000011920929,
+        "height": 0.9519999865442514
+      },
+      "recommendedHeightToWidth": [
+        0.4,
+        3
+      ],
+      "recommendedDepthToWidth": [
+        0.65,
+        1.1
+      ],
+      "glb": {
+        "file": "generic-ribbon.glb",
+        "bytes": 103412,
+        "sha256": "82b468cecf28b0f1e32caafbd9262e4c5896d4bf33b26e43e5c08f348c5f9893"
+      }
+    },
+    {
+      "id": "generic-point",
+      "name": "竖向窗格公寓楼",
+      "family": "generic",
+      "variant": "point",
+      "role": "ordinary-building",
+      "file": "generic-point.json",
+      "bytes": 152321,
+      "sha256": "0e5623b66b134b06a52c68d39619803fa4a07c31f3ea65918866d14c9946a201",
+      "triangles": 828,
+      "bounds": {
+        "min": [
+          -0.5,
+          0,
+          -0.5
+        ],
+        "max": [
+          0.5,
+          1,
+          0.5
+        ]
+      },
+      "displayUnit": "compound",
+      "buildingCount": 1,
+      "sharedSpace": "garden",
+      "previewHeightToWidth": 2,
+      "primaryHeightToWidth": [
+        4.2,
+        6.4
+      ],
+      "maxPrimarySlenderness": 7.2,
+      "primaryBody": {
+        "partName": "primary-building-body",
+        "triangleStart": 12,
+        "triangleCount": 28,
+        "bounds": {
+          "min": [
+            -0.4300000071525574,
+            0.012000000104308128,
+            -0.4300000071525574
+          ],
+          "max": [
+            0.4300000071525574,
+            0.9539999961853027,
+            0.4300000071525574
+          ]
+        },
+        "width": 0.8600000143051147,
+        "depth": 0.8600000143051147,
+        "height": 0.9419999960809946
+      },
+      "recommendedHeightToWidth": [
+        0.7,
+        3.5
+      ],
+      "recommendedDepthToWidth": [
+        0.7,
+        1.12
+      ],
+      "glb": {
+        "file": "generic-point.glb",
+        "bytes": 97132,
+        "sha256": "90e86017c0e27f1b0d383ccc9f08f2e0e5f70703796d1915cf955a729779c257"
+      }
+    },
+    {
+      "id": "residential-gallery",
+      "name": "连续阳台住宅",
+      "family": "residential",
+      "variant": "gallery",
+      "role": "ordinary-building",
+      "file": "residential-gallery.json",
+      "bytes": 132565,
+      "sha256": "bf08b3dcd8fc01972385c92db2ad386779e5c0087268adc335981ca3c754e6e6",
+      "triangles": 732,
+      "bounds": {
+        "min": [
+          -0.5,
+          0,
+          -0.5
+        ],
+        "max": [
+          0.5,
+          1,
+          0.5
+        ]
+      },
+      "displayUnit": "compound",
+      "buildingCount": 1,
+      "sharedSpace": "garden",
+      "previewHeightToWidth": 1.55,
+      "primaryHeightToWidth": [
+        3.5,
+        5.6
+      ],
+      "maxPrimarySlenderness": 6.6,
+      "primaryBody": {
+        "partName": "primary-building-body",
+        "triangleStart": 12,
+        "triangleCount": 12,
+        "bounds": {
+          "min": [
+            -0.4399999976158142,
+            0.012000000104308128,
+            -0.41999998688697815
+          ],
+          "max": [
+            0.4399999976158142,
+            0.9459999799728394,
+            0.3499999940395355
+          ]
+        },
+        "width": 0.8799999952316284,
+        "depth": 0.7699999809265137,
+        "height": 0.9339999798685312
+      },
+      "recommendedHeightToWidth": [
+        0.5,
+        3
+      ],
+      "recommendedDepthToWidth": [
+        0.7,
+        1.1
+      ],
+      "glb": {
+        "file": "residential-gallery.glb",
+        "bytes": 86552,
+        "sha256": "69bd3c78b3fcca921234becb1eb2fd18ffb11758371c21a710d0b1e2bc3cdada"
+      }
+    },
+    {
+      "id": "residential-point",
+      "name": "多翼公寓楼",
+      "family": "residential",
+      "variant": "point",
+      "role": "ordinary-building",
+      "file": "residential-point.json",
+      "bytes": 150518,
+      "sha256": "a70d3e97f48ba6c37db0bf329d6c6d470d7442ca5951828b7192426ae0857a11",
+      "triangles": 844,
+      "bounds": {
+        "min": [
+          -0.5,
+          0,
+          -0.5
+        ],
+        "max": [
+          0.5,
+          1,
+          0.5
+        ]
+      },
+      "displayUnit": "compound",
+      "buildingCount": 1,
+      "sharedSpace": "garden",
+      "previewHeightToWidth": 2.1,
+      "primaryHeightToWidth": [
+        4,
+        6.4
+      ],
+      "maxPrimarySlenderness": 7.2,
+      "primaryBody": {
+        "partName": "primary-building-body",
+        "triangleStart": 12,
+        "triangleCount": 44,
+        "bounds": {
+          "min": [
+            -0.4399999976158142,
+            0.012000000104308128,
+            -0.4399999976158142
+          ],
+          "max": [
+            0.4399999976158142,
+            0.9580000042915344,
+            0.4399999976158142
+          ]
+        },
+        "width": 0.8799999952316284,
+        "depth": 0.8799999952316284,
+        "height": 0.9460000041872263
+      },
+      "recommendedHeightToWidth": [
+        0.7,
+        3.5
+      ],
+      "recommendedDepthToWidth": [
+        0.7,
+        1.1
+      ],
+      "glb": {
+        "file": "residential-point.glb",
+        "bytes": 98964,
+        "sha256": "36b9c2f97f960b12edf504f76b3e0795954254166fe2def5a596b41de8eff095"
+      }
+    },
+    {
+      "id": "tree-broad-crown",
+      "name": "阔叶树冠",
+      "family": "tree",
+      "variant": "broadCrown",
+      "role": "tree-component",
+      "file": "tree-broad-crown.json",
+      "bytes": 52538,
+      "sha256": "7dc61e868d74732689f476e3e4118673a2d2e1b43c7df0871a407bfcc47a1b14",
+      "triangles": 288,
+      "bounds": {
+        "min": [
+          -0.971283,
+          -0.913133,
+          -0.971283
+        ],
+        "max": [
+          0.971283,
+          0.913133,
+          0.971283
+        ]
+      },
+      "recommendedHeightToWidth": null,
+      "recommendedDepthToWidth": null,
+      "glb": {
+        "file": "tree-broad-crown.glb",
+        "bytes": 32832,
+        "sha256": "34a472e69dde21e117ad956362eb4a21defcd97f8f00b7bb619db376c1f30a94"
+      }
+    },
+    {
+      "id": "tree-upright-crown",
+      "name": "直立树冠",
+      "family": "tree",
+      "variant": "uprightCrown",
+      "role": "tree-component",
+      "file": "tree-upright-crown.json",
+      "bytes": 52766,
+      "sha256": "bf438c8bdb0bbaebc19f8b7e08de852618ad3dc11864d9f1668cbdd001945cc7",
+      "triangles": 288,
+      "bounds": {
+        "min": [
+          -0.862262,
+          -0.961704,
+          -0.862262
+        ],
+        "max": [
+          0.862262,
+          0.961704,
+          0.862262
+        ]
+      },
+      "recommendedHeightToWidth": null,
+      "recommendedDepthToWidth": null,
+      "glb": {
+        "file": "tree-upright-crown.glb",
+        "bytes": 32836,
+        "sha256": "705e24de7d1271991eaeaa508e23ec585c05aace2d5c93ae899368dd3006fa3b"
+      }
+    },
+    {
+      "id": "tree-trunk",
+      "name": "树干组件",
+      "family": "tree",
+      "variant": "trunk",
+      "role": "tree-component",
+      "file": "tree-trunk.json",
+      "bytes": 3764,
+      "sha256": "7bb2fda861f3195e0b6ebeaa18c959888a7c2f8a7746cf0b824904c7c134ef82",
+      "triangles": 24,
+      "bounds": {
+        "min": [
+          -0.866025,
+          -0.5,
+          -1
+        ],
+        "max": [
+          0.866025,
+          0.5,
+          1
+        ]
+      },
+      "recommendedHeightToWidth": null,
+      "recommendedDepthToWidth": null,
+      "glb": {
+        "file": "tree-trunk.glb",
+        "bytes": 4164,
+        "sha256": "6846dc6f10e90cb76747b2185c44b050465b7898d9ce5244d3f58cb1be0b88b4"
+      }
+    },
+    {
+      "id": "road-deck",
+      "name": "道路实体组件",
+      "family": "road",
+      "variant": "deck",
+      "role": "road-component",
+      "file": "road-deck.json",
+      "bytes": 3134,
+      "sha256": "bc8885ef1fc5c3a7bac839f5946e09778076bb9e5773e2ce7e02bdabff22f861",
+      "triangles": 12,
+      "bounds": {
+        "min": [
+          -0.5,
+          0,
+          -0.5
+        ],
+        "max": [
+          0.5,
+          1,
+          0.5
+        ]
+      },
+      "recommendedHeightToWidth": null,
+      "recommendedDepthToWidth": null,
+      "glb": {
+        "file": "road-deck.glb",
+        "bytes": 2908,
+        "sha256": "b3dae0473e0fb4bbf5053e77e5658a53745fbded260e096947698f8509f1c802"
+      }
+    },
+    {
+      "id": "bridge-pier",
+      "name": "桥墩组件",
+      "family": "road",
+      "variant": "pier",
+      "role": "road-component",
+      "file": "bridge-pier.json",
+      "bytes": 3206,
+      "sha256": "4a9761ee1330ec490488b7f842f258ea952eca32e3b8568aea1488f300b8e6f5",
+      "triangles": 12,
+      "bounds": {
+        "min": [
+          -0.5,
+          0,
+          -0.5
+        ],
+        "max": [
+          0.5,
+          1,
+          0.5
+        ]
+      },
+      "recommendedHeightToWidth": null,
+      "recommendedDepthToWidth": null,
+      "glb": {
+        "file": "bridge-pier.glb",
+        "bytes": 2912,
+        "sha256": "6174e21882fc2643a737aa5df4d91f1c6771edcd8f50a5f41c5052f11ec66ba5"
+      }
+    }
+  ],
+  "presets": [
+    {
+      "id": "tree-broad",
+      "name": "阔叶整树",
+      "family": "tree",
+      "recipe": [
+        {
+          "asset": "tree-trunk",
+          "position": [
+            0,
+            0.325,
+            0
+          ],
+          "scale": [
+            0.06,
+            0.65,
+            0.06
+          ],
+          "color": "#776347"
+        },
+        {
+          "asset": "tree-broad-crown",
+          "position": [
+            0,
+            1.1,
+            0
+          ],
+          "scale": [
+            0.55,
+            0.6,
+            0.55
+          ],
+          "color": "#3d7950"
+        }
+      ],
+      "glb": {
+        "file": "tree-broad.glb",
+        "bytes": 35956,
+        "sha256": "6c4b10abba992219a94a07fe4c1472c881a0701e7226bde89639b418d93c2c17"
+      }
+    },
+    {
+      "id": "tree-upright",
+      "name": "直立整树",
+      "family": "tree",
+      "recipe": [
+        {
+          "asset": "tree-trunk",
+          "position": [
+            0,
+            0.325,
+            0
+          ],
+          "scale": [
+            0.06,
+            0.65,
+            0.06
+          ],
+          "color": "#776347"
+        },
+        {
+          "asset": "tree-upright-crown",
+          "position": [
+            0,
+            1.22,
+            0
+          ],
+          "scale": [
+            0.48,
+            0.72,
+            0.48
+          ],
+          "color": "#3d7950"
+        }
+      ],
+      "glb": {
+        "file": "tree-upright.glb",
+        "bytes": 35964,
+        "sha256": "3183abb3be1b77d8efaa27aeb5e9efe3097c7967cd4328516aed43178e15896a"
+      }
+    }
+  ],
+  "budgets": {
+    "buildingAssets": 12,
+    "buildingJsonBytes": 1954081,
+    "totalJsonBytes": 2069489,
+    "maximumTriangles": 1392
+  }
+}

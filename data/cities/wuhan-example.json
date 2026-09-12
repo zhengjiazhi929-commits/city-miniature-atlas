@@ -1,0 +1,26 @@
+{
+  "schema": "city-starter-v1",
+  "id": "wuhan-example",
+  "name": "武汉",
+  "nameEn": "Wuhan",
+  "coordinates": [114.305, 30.593],
+  "boundary": {
+    "path": "./data/regions/wuhan.geojson",
+    "sha256": "442ed9b67e43f0f29942963b2fd781812d6d7f66760dd266104d7eaf9d457124",
+    "source": {
+      "url": "https://www.openstreetmap.org/relation/3076268",
+      "attribution": "© OpenStreetMap contributors",
+      "license": "ODbL-1.0"
+    }
+  },
+  "airports": {"status": "unverified"},
+  "landmarks": [
+    {
+      "id": "yellow-crane",
+      "name": "黄鹤楼",
+      "coordinates": [114.3027, 30.5446],
+      "sourceUrl": "https://www.openstreetmap.org/?mlat=30.5446&mlon=114.3027#map=17/30.5446/114.3027",
+      "description": "沿用应用已收录的黄鹤楼代表点，用于验证真实城市边界内的景点定位。本示例仅显示位置标注，不加载独立建筑模型。"
+    }
+  ]
+}

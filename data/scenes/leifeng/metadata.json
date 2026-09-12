@@ -1,0 +1,94 @@
+{
+  "id": "leifeng-real",
+  "name": "西湖·雷峰塔",
+  "bounds": [
+    120.1398,
+    30.2293,
+    120.1502,
+    30.2383
+  ],
+  "boundaryRole": "Authored approximately one-kilometre rectangular view frame; NOT a scenic-area administrative boundary.",
+  "coordinates": [
+    120.1450125,
+    30.2338837
+  ],
+  "coordinateRole": "Centre returned for the mapped octagonal pagoda footprint, approximate WGS84; not a surveyed official control point.",
+  "coordinateSource": "https://www.openstreetmap.org/way/229726934",
+  "towerHeightMeters": 71.7,
+  "towerHeightBasis": "OSM height tag 71.7, corroborated only to approximately 71-72m by Hangzhou government/tourism editorial pages; individual tiers/ornament simplified.",
+  "horizontalAndVerticalScale": 1,
+  "demEncoding": "Terrarium RGB: R*256+G+B/256-32768 metres",
+  "demZoom": 15,
+  "demFiles": [
+    "dem-15-27319-13494.png",
+    "dem-15-27319-13495.png",
+    "dem-15-27320-13494.png",
+    "dem-15-27320-13495.png"
+  ],
+  "sourceFiles": [
+    {
+      "file": "dem-15-27319-13494.png",
+      "sha256": "93d870493ef691ad6a4cbbd4bef88ceb8d92061462785db12fdedd53467a7eb9",
+      "bytes": 45172
+    },
+    {
+      "file": "dem-15-27319-13495.png",
+      "sha256": "7b56678e08488e3c0cceed17d083088058431605e23d9fcde693f79daf184390",
+      "bytes": 81591
+    },
+    {
+      "file": "dem-15-27320-13494.png",
+      "sha256": "3f566ded3ee8e9e1f69dfb0dda9d983d0c3c2138861e067f55533f9c735efc14",
+      "bytes": 57541
+    },
+    {
+      "file": "dem-15-27320-13495.png",
+      "sha256": "7f77349044308854fc365edf21611471a318f5f4c5e21f09e9771ce3bdc03201",
+      "bytes": 78684
+    },
+    {
+      "file": "source-features.geojson",
+      "sha256": "0bba3165c0d17a2a7bb3ae3a9980663133262fe7e14d0eaf937254cd54b1eb17",
+      "bytes": 161559
+    },
+    {
+      "file": "tower-way.json",
+      "sha256": "0620fdeb7bda668d4a532e5a9b65f5e403ace6ca2a6996a9a55cfc13b3864f9b",
+      "bytes": 2249
+    }
+  ],
+  "retrievedAt": "2026-09-08T11:30:36.777274+00:00",
+  "osmSources": [
+    "https://api.openstreetmap.org/api/0.6/map?bbox=120.1398,30.2293,120.1502,30.2383",
+    "https://api.openstreetmap.org/api/0.6/relation/2308774/full",
+    "https://api.openstreetmap.org/api/0.6/relation/14719754/full",
+    "https://api.openstreetmap.org/api/0.6/relation/20059292/full",
+    "https://api.openstreetmap.org/api/0.6/way/229726934/full.json"
+  ],
+  "demSource": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png",
+  "limitations": [
+    "Mapzen DEM represents terrain at source resolution, not a laser scan or present-day architectural survey.",
+    "Unknown-height ancillary buildings remain footprint markings; no invented tall buildings.",
+    "Path centreline and shoreline derive from OSM; display stroke widths are cartographic styling.",
+    "No invented trees, pavilions, boats, bridges or Gaussian hills."
+  ],
+  "attribution": "© OpenStreetMap contributors · Mapzen Terrain Tiles / USGS / NOAA",
+  "notices": "NOTICE.md",
+  "generatedFiles": [
+    {
+      "file": "build.js",
+      "sha256": "3375cfaa4f72a18a8a18951aaddbebeb34256f9ebbcc3c769bbaac44abab3185",
+      "bytes": 18604
+    },
+    {
+      "file": "scene.glb",
+      "sha256": "bca8f6b975f80a072a14108bed9b5a88146bca8b357dc64568f03e920b39a51a",
+      "bytes": 6221188
+    },
+    {
+      "file": "scene.json",
+      "sha256": "a80a174ddddd6e5df968a9c5d99c6100e376ed7aebed42857071da0d026c68b2",
+      "bytes": 5604
+    }
+  ]
+}

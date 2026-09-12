@@ -1,0 +1,30 @@
+{
+  "source": "Natural Earth 1:10m Admin 1 - States, Provinces",
+  "sourceUrl": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_admin_1_states_provinces.geojson",
+  "sourceCommit": "ca96624a56bd078437bca8184e78163e5039ad19",
+  "sourceSha256": "22d0e3ad85eb3e27f17cabf8ba2d50e554fbc27a87796ff891d958185da62fb5",
+  "license": "Public domain",
+  "licenseUrl": "https://www.naturalearthdata.com/about/terms-of-use/",
+  "sourceDocumentationUrl": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/",
+  "preparedAt": "2026-09-08",
+  "featureCount": 34,
+  "originalCoordinateCount": 54329,
+  "outputCoordinateCount": 10820,
+  "outputBytes": 209374,
+  "outputSha256": "f8ecab35e0dc67f4157830bd3a6dd31a581de76f493100ca152cae2bc0a677eb",
+  "transformations": [
+    "Selected source admin areas CHN, TWN, HKG and MAC.",
+    "Merged Taiwan subregions into one selectable Taiwan province feature; Hong Kong districts into one Hong Kong feature.",
+    "Merged source Paracel Islands geometry into Hainan; retained source Macao geometry.",
+    "Simplified shared coverage with Shapely coverage_simplify tolerance 0.03 degrees, rounded coordinates to 4 decimals.",
+    "Added hand-authored app slugs, shortened Chinese labels and conventional province codes; app slugs are the stable public interface."
+  ],
+  "limitations": [
+    "A generalized travel-atlas illustration, not an official standard map, legal boundary reference, navigational map or complete territorial depiction.",
+    "Natural Earth states it uses de facto boundaries by default; this processing does not resolve territorial boundary differences.",
+    "34 selectable province-level entries do not imply all geographic territory or islands are present.",
+    "Source contains Hainan, Taiwan, Hong Kong, Macao and some offshore islands including Paracel features. Small islands and coastal details may be absent or generalized.",
+    "South China Sea inset and any associated maritime boundary representation are not supplied.",
+    "No city or district boundary polygons are included. Demo city coordinates are approximate marker locations, not boundary data."
+  ]
+}

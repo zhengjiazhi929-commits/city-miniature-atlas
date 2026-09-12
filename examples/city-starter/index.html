@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>城市接入示例 · 山河入掌</title>
+  <link rel="stylesheet" href="../../regions.css">
+  <link rel="stylesheet" href="./style.css">
+  <script type="importmap">{"imports":{"three":"../../vendor/three.module.js","three/addons/":"../../vendor/addons/"}}</script>
+  <script type="module" src="./main.js"></script>
+</head>
+<body>
+  <header><a href="../../">山河入掌</a><span>城市接入示例</span><a href="../../docs/add-a-city.md">接入说明 ↗</a></header>
+  <main>
+    <aside>
+      <p class="eyebrow">YOUR NEXT CITY</p>
+      <h1 id="city-name">加载城市…</h1>
+      <p>真实边界、地貌与基础路网。拖动旋转，滚轮缩放，点击地点定位。</p>
+      <div class="controls"><button id="full-view" disabled>完整市域</button><button id="labels" disabled aria-pressed="true">地点标注</button></div>
+      <h2>景点位置</h2><div id="places"></div>
+      <article id="place-detail" hidden><h3></h3><p></p><a target="_blank" rel="noopener">地点来源 ↗</a></article>
+      <section class="notes"><h2>这个示例的范围</h2><p>通用地形与建筑轮廓按需联网加载。不会自动生成杭州的精细街区或独立景点模型。</p><p>机场尚未接入此模板。此状态不表示城市没有机场。</p><p>边界校验涵盖数据格式与点位包含关系，行政现状和来源许可仍需核实。</p><a id="boundary-source" target="_blank" rel="noopener">边界来源 ↗</a></section>
+      <p id="config-path" class="config"></p>
+    </aside>
+    <section class="stage" aria-label="城市三维沙盘"><div id="viewer"></div><div id="status" role="status">读取配置…</div><button id="retry" hidden>重新加载</button></section>
+  </main>
+</body>
+</html>

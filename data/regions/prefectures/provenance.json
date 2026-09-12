@@ -1,0 +1,61 @@
+{
+  "preparedAt": "2026-09-08T10:26:22.513806+00:00",
+  "metadata": {
+    "boundaryID": "CHN-ADM2-99377448",
+    "boundaryName": "China",
+    "boundaryISO": "CHN",
+    "boundaryYearRepresented": "2020",
+    "boundaryType": "ADM2",
+    "boundaryCanonical": "Unknown",
+    "boundarySource": "publicly available online sources, HDX",
+    "boundaryLicense": "Creative Commons Attribution 3.0 Intergovernmental Organisations (CC BY 3.0 IGO)",
+    "licenseDetail": "nan",
+    "licenseSource": "data.humdata.org/dataset/cod-ab-chn",
+    "boundarySourceURL": "data.humdata.org/dataset/cod-ab-chn",
+    "sourceDataUpdateDate": "Thu Jan 19 07:31:04 2023",
+    "buildDate": "Dec 12, 2023",
+    "Continent": "Asia",
+    "UNSDG-region": "Eastern and South-Eastern Asia",
+    "UNSDG-subregion": "Eastern Asia",
+    "worldBankIncomeGroup": "Upper-middle-income Countries",
+    "admUnitCount": "361",
+    "meanVertices": "319.0",
+    "minVertices": "19",
+    "maxVertices": "4204",
+    "meanPerimeterLengthKM": "919.2593255757668",
+    "minPerimeterLengthKM": "17.69946995987296",
+    "maxPerimeterLengthKM": "4830.691418958658",
+    "meanAreaSqKM": "25883.05829239809",
+    "minAreaSqKM": "4.6941190139506",
+    "maxAreaSqKM": "473222.7103617834",
+    "staticDownloadLink": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbHumanitarian/CHN/ADM2/geoBoundaries-CHN-ADM2-all.zip",
+    "gjDownloadURL": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbHumanitarian/CHN/ADM2/geoBoundaries-CHN-ADM2.geojson",
+    "tjDownloadURL": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbHumanitarian/CHN/ADM2/geoBoundaries-CHN-ADM2.topojson",
+    "imagePreview": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbHumanitarian/CHN/ADM2/geoBoundaries-CHN-ADM2-PREVIEW.png",
+    "simplifiedGeometryGeoJSON": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbHumanitarian/CHN/ADM2/geoBoundaries-CHN-ADM2_simplified.geojson"
+  },
+  "downloadUrl": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbHumanitarian/CHN/ADM2/geoBoundaries-CHN-ADM2.geojson",
+  "sourceBytes": 4466023,
+  "sourceSha256": "12af10d8810b00d7258df7cc6cafa70023a3db41fc48e9f69846f6cfa543ac0b",
+  "sourceSnapshotCommit": "9469f09",
+  "partitionedFeatures": 361,
+  "citySelectableFeatures": 358,
+  "excludedFromCityMatching": [
+    "Hong Kong Special Administrative Region",
+    "Macao Special Administrative Region",
+    "Taiwan province"
+  ],
+  "coordinateReference": "WGS84 longitude / latitude, GeoJSON; no GCJ-02 or BD-09 conversion",
+  "changes": [
+    "Split into individual Feature files.",
+    "Preserved all source geometry vertices, components and holes; normalized ring orientation only.",
+    "Added app IDs, bounds, metadata and source attribution; no hand-authored geometry or guessed Chinese aliases."
+  ],
+  "limitations": [
+    "The source reports boundaryYearRepresented 2020; it is not a current comprehensive administrative register.",
+    "The source includes municipalities, prefectures, some directly administered areas and three province-level special cases. Three special cases are excluded from city matching.",
+    "English shapeName alone is ambiguous in some locations; runtime matching also requires the selected point inside the actual polygon and parent province.",
+    "A town without a matching name and actual boundary is unavailable; do not substitute its enclosing prefecture.",
+    "Four independently verified OSM regions remain preferred overrides."
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "preparedAt": "2026-09-08T10:14:17.616782+00:00",
+  "acquisition": "Four Nominatim search requests followed by four relation lookup requests, sequential with 1.1 seconds between requests; no runtime geocoding.",
+  "endpointPolicy": "https://operations.osmfoundation.org/policies/nominatim/",
+  "sourceLicense": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "coordinateReference": "Nominatim GeoJSON follows RFC 7946; longitude/latitude WGS84, no GCJ-02 or BD-09 conversion applied.",
+  "coordinateReferenceUrl": "https://nominatim.org/release-docs/latest/api/Output/",
+  "sources": [
+    {
+      "url": "https://nominatim.openstreetmap.org/lookup?osm_ids=R913110&format=geojson&polygon_geojson=1&polygon_threshold=0&extratags=1&namedetails=1&addressdetails=1",
+      "retrievedAt": "2026-09-08T10:09:30.609214+00:00",
+      "bytes": 50634,
+      "sha256": "73a435d5d2f8149e9b3964dbe1354a80578f3166464efb82f550e175eff4d363",
+      "provider": "OpenStreetMap / Nominatim",
+      "osmType": "relation",
+      "osmId": 913110,
+      "osmUrl": "https://www.openstreetmap.org/relation/913110",
+      "adminLevel": 3,
+      "displayNameFromSource": "香港 Hong Kong, 中国",
+      "inputCounts": {
+        "coordinates": 1718,
+        "components": 13,
+        "holes": 22
+      },
+      "outputCounts": {
+        "coordinates": 1718,
+        "components": 13,
+        "holes": 22
+      },
+      "simplificationToleranceDegrees": 0,
+      "simplification": "None",
+      "ringOrientation": "RFC 7946 outer CCW, inner CW; no coordinate rounding",
+      "planarAreaRelativeChange": 0.0,
+      "hausdorffDistanceDegrees": 0.0,
+      "sourceSnapshotHasRelationVersion": false,
+      "id": "hong-kong",
+      "outputFile": "./data/regions/hong-kong.geojson",
+      "outputBytes": 43502,
+      "outputSha256": "fc9243e76df4465ad2d6b48ae484c0ed7be01306fe996b40317aca35e2a133e2"
+    },
+    {
+      "url": "https://nominatim.openstreetmap.org/lookup?osm_ids=R553302&format=geojson&polygon_geojson=1&polygon_threshold=0&extratags=1&namedetails=1&addressdetails=1",
+      "retrievedAt": "2026-09-08T10:09:35.706230+00:00",
+      "bytes": 475921,
+      "sha256": "c14e77c4d4359122a5133e7be8961760bccfbf594b721227cafb5e786b96eda5",
+      "provider": "OpenStreetMap / Nominatim",
+      "osmType": "relation",
+      "osmId": 553302,
+      "osmUrl": "https://www.openstreetmap.org/relation/553302",
+      "adminLevel": 4,
+      "displayNameFromSource": "浙江省, 中国",
+      "inputCounts": {
+        "coordinates": 19066,
+        "components": 1,
+        "holes": 1
+      },
+      "outputCounts": {
+        "coordinates": 4534,
+        "components": 1,
+        "holes": 1
+      },
+      "simplificationToleranceDegrees": 0.0006,
+      "simplification": "Shapely simplify(preserve_topology=True)",
+      "ringOrientation": "RFC 7946 outer CCW, inner CW; no coordinate rounding",
+      "planarAreaRelativeChange": 5.9458037999560176e-05,
+      "hausdorffDistanceDegrees": 0.0005998716053254757,
+      "sourceSnapshotHasRelationVersion": false,
+      "id": "zhejiang",
+      "outputFile": "./data/regions/zhejiang.geojson",
+      "outputBytes": 113180,
+      "outputSha256": "e84da7ebf3864e1350b8a2f06996456ed58d9295c791fad4cb608fd9e1666a2f"
+    },
+    {
+      "url": "https://nominatim.openstreetmap.org/lookup?osm_ids=R3221112&format=geojson&polygon_geojson=1&polygon_threshold=0&extratags=1&namedetails=1&addressdetails=1",
+      "retrievedAt": "2026-09-08T10:09:40.984635+00:00",
+      "bytes": 638515,
+      "sha256": "1fe1cd0e7831a8b8b938d3c77c995c3633084d1d32a80a8a7434151a0175422e",
+      "provider": "OpenStreetMap / Nominatim",
+      "osmType": "relation",
+      "osmId": 3221112,
+      "osmUrl": "https://www.openstreetmap.org/relation/3221112",
+      "adminLevel": 5,
+      "displayNameFromSource": "杭州市, 浙江省, 中国",
+      "inputCounts": {
+        "coordinates": 25606,
+        "components": 1,
+        "holes": 0
+      },
+      "outputCounts": {
+        "coordinates": 3569,
+        "components": 1,
+        "holes": 0
+      },
+      "simplificationToleranceDegrees": 0.0005,
+      "simplification": "Shapely simplify(preserve_topology=True)",
+      "ringOrientation": "RFC 7946 outer CCW, inner CW; no coordinate rounding",
+      "planarAreaRelativeChange": 1.1311076200115622e-06,
+      "hausdorffDistanceDegrees": 0.0004993884088827508,
+      "sourceSnapshotHasRelationVersion": false,
+      "id": "hangzhou",
+      "outputFile": "./data/regions/hangzhou.geojson",
+      "outputBytes": 89323,
+      "outputSha256": "7af19a52e437136080031eec48c7274bb379a83b230021a2db4b3300ad3479a3"
+    },
+    {
+      "url": "https://nominatim.openstreetmap.org/lookup?osm_ids=R3076268&format=geojson&polygon_geojson=1&polygon_threshold=0&extratags=1&namedetails=1&addressdetails=1",
+      "retrievedAt": "2026-09-08T10:09:44.805984+00:00",
+      "bytes": 126858,
+      "sha256": "f3ff3a5d1f28e6c01a037737ceb8f420abead2ff61a4926580635d0bc7116883",
+      "provider": "OpenStreetMap / Nominatim",
+      "osmType": "relation",
+      "osmId": 3076268,
+      "osmUrl": "https://www.openstreetmap.org/relation/3076268",
+      "adminLevel": 5,
+      "displayNameFromSource": "武汉市, 湖北省, 中国",
+      "inputCounts": {
+        "coordinates": 4978,
+        "components": 3,
+        "holes": 3
+      },
+      "outputCounts": {
+        "coordinates": 4978,
+        "components": 3,
+        "holes": 3
+      },
+      "simplificationToleranceDegrees": 0,
+      "simplification": "None",
+      "ringOrientation": "RFC 7946 outer CCW, inner CW; no coordinate rounding",
+      "planarAreaRelativeChange": 0.0,
+      "hausdorffDistanceDegrees": 0.0,
+      "sourceSnapshotHasRelationVersion": false,
+      "id": "wuhan",
+      "outputFile": "./data/regions/wuhan.geojson",
+      "outputBytes": 123461,
+      "outputSha256": "442ed9b67e43f0f29942963b2fd781812d6d7f66760dd266104d7eaf9d457124"
+    }
+  ]
+}

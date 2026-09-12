@@ -1,0 +1,142 @@
+[
+  {
+    "id": "victoria-harbour",
+    "coordinates": [
+      114.18398,
+      22.29191
+    ],
+    "anchor": "维多利亚港水域名称代表点（非水域几何中心、非岸上观景台）",
+    "anchorType": "water-area",
+    "sourceUrl": "https://www.discoverhongkong.com/eng/place-to-go/travel.guide-a-symphony-of-lights.html",
+    "coordinateSourceUrl": "https://www.map.gov.hk/gs/api/v1.0.0/locationSearch?q=Victoria%20Harbour",
+    "coordinateBasis": "香港地政总署 LocationSearchAPI 地点代表点；HK1980 Grid 经地政总署转换服务转为 WGS84 经纬度，数值保留 5 位小数。来源未给出点位精度，非测绘／导航入口精度声明。",
+    "approximate": true,
+    "checkedAt": "2026-09-08"
+  },
+  {
+    "id": "victoria-peak",
+    "coordinates": [
+      114.14988,
+      22.27125
+    ],
+    "anchor": "山顶凌霄阁建筑代表点（山顶道 128 号，非太平山最高峰）",
+    "anchorType": "building",
+    "sourceUrl": "https://www.discoverhongkong.com/eng/place-to-go/travel.guide-the-peak-tower.html",
+    "coordinateSourceUrl": "https://www.map.gov.hk/gs/api/v1.0.0/locationSearch?q=The%20Peak%20Tower",
+    "coordinateBasis": "香港地政总署 LocationSearchAPI 地点代表点；HK1980 Grid 经地政总署转换服务转为 WGS84 经纬度，数值保留 5 位小数。来源未给出点位精度，非测绘／导航入口精度声明。",
+    "approximate": true,
+    "checkedAt": "2026-09-08"
+  },
+  {
+    "id": "hong-kong-disneyland",
+    "coordinates": [
+      114.04212,
+      22.31274
+    ],
+    "anchor": "香港迪士尼主题乐园内的官方地点代表点（非酒店、非已核实的城堡中心）",
+    "anchorType": "park-area",
+    "sourceUrl": "https://www.discoverhongkong.com/eng/place-to-go/travel.guide-hong-kong-disneyland.html",
+    "coordinateSourceUrl": "https://www.map.gov.hk/gs/api/v1.0.0/locationSearch?q=Hong%20Kong%20Disneyland",
+    "coordinateBasis": "香港地政总署 LocationSearchAPI 地点代表点；HK1980 Grid 经地政总署转换服务转为 WGS84 经纬度，数值保留 5 位小数。来源未给出点位精度，非测绘／导航入口精度声明。",
+    "approximate": true,
+    "checkedAt": "2026-09-08"
+  },
+  {
+    "id": "ocean-park",
+    "coordinates": [
+      114.17468,
+      22.24821
+    ],
+    "anchor": "香港海洋公园黄竹坑道 180 号地点代表点（正门／海滨乐园抵达区域）",
+    "anchorType": "arrival-area",
+    "sourceUrl": "https://www.discoverhongkong.com/eng/place-to-go/travel.guide-ocean-park-hong-kong.html",
+    "coordinateSourceUrl": "https://www.map.gov.hk/gs/api/v1.0.0/locationSearch?q=Ocean%20Park",
+    "coordinateBasis": "香港地政总署 LocationSearchAPI 地点代表点；HK1980 Grid 经地政总署转换服务转为 WGS84 经纬度，数值保留 5 位小数。来源未给出点位精度，非测绘／导航入口精度声明。",
+    "approximate": true,
+    "checkedAt": "2026-09-08"
+  },
+  {
+    "id": "tian-tan-buddha",
+    "coordinates": [
+      113.90501,
+      22.25395
+    ],
+    "anchor": "天坛大佛坐像所在地点代表点（非宝莲禅寺入口）",
+    "anchorType": "monument",
+    "sourceUrl": "https://www.discoverhongkong.com/eng/place-to-go/travel.guide-the-big-buddha.html",
+    "coordinateSourceUrl": "https://www.map.gov.hk/gs/api/v1.0.0/locationSearch?q=Tian%20Tan%20Buddha",
+    "coordinateBasis": "香港地政总署 LocationSearchAPI 地点代表点；HK1980 Grid 经地政总署转换服务转为 WGS84 经纬度，数值保留 5 位小数。来源未给出点位精度，非测绘／导航入口精度声明。",
+    "approximate": true,
+    "checkedAt": "2026-09-08"
+  },
+  {
+    "id": "ngong-ping",
+    "coordinates": [
+      113.90139,
+      22.25632
+    ],
+    "anchor": "昂坪缆车站建筑代表点（山上昂坪端，非东涌站或线路中点）",
+    "anchorType": "terminal",
+    "sourceUrl": "https://www.np360.com.hk/en/cable-cars",
+    "coordinateSourceUrl": "https://www.map.gov.hk/gs/api/v1.0.0/locationSearch?q=Ngong%20Ping%20Cable%20Car%20Terminal",
+    "coordinateBasis": "香港地政总署 LocationSearchAPI 地点代表点；HK1980 Grid 经地政总署转换服务转为 WGS84 经纬度，数值保留 5 位小数。来源未给出点位精度，非测绘／导航入口精度声明。",
+    "approximate": true,
+    "checkedAt": "2026-09-08"
+  },
+  {
+    "id": "star-ferry",
+    "coordinates": [
+      114.16864,
+      22.29376
+    ],
+    "anchor": "尖沙咀天星码头建筑代表点（非中环七号码头、非钟楼、非船只实时位置）",
+    "anchorType": "pier",
+    "sourceUrl": "https://www.starferry.com.hk/en/pier",
+    "coordinateSourceUrl": "https://www.map.gov.hk/gs/api/v1.0.0/locationSearch?q=Tsim%20Sha%20Tsui%20Star%20Ferry%20Pier",
+    "coordinateBasis": "香港地政总署 LocationSearchAPI 地点代表点；HK1980 Grid 经地政总署转换服务转为 WGS84 经纬度，数值保留 5 位小数。来源未给出点位精度，非测绘／导航入口精度声明。",
+    "approximate": true,
+    "checkedAt": "2026-09-08"
+  },
+  {
+    "id": "nan-lian-garden",
+    "coordinates": [
+      114.20458,
+      22.33914
+    ],
+    "anchor": "南莲园池园区地点代表点（凤德道 60 号，非志莲净苑）",
+    "anchorType": "garden-area",
+    "sourceUrl": "https://www.lcsd.gov.hk/en/parks/nlg/index.html",
+    "coordinateSourceUrl": "https://www.map.gov.hk/gs/api/v1.0.0/locationSearch?q=Nan%20Lian%20Garden",
+    "coordinateBasis": "香港地政总署 LocationSearchAPI 地点代表点；HK1980 Grid 经地政总署转换服务转为 WGS84 经纬度，数值保留 5 位小数。来源未给出点位精度，非测绘／导航入口精度声明。",
+    "approximate": true,
+    "checkedAt": "2026-09-08"
+  },
+  {
+    "id": "hong-kong-palace-museum",
+    "coordinates": [
+      114.15504,
+      22.30157
+    ],
+    "anchor": "香港故宫文化博物馆馆舍地点代表点（博物馆道 8 号，非停车场）",
+    "anchorType": "building",
+    "sourceUrl": "https://www.hkpm.org.hk/en/visit/plan-your-visit",
+    "coordinateSourceUrl": "https://www.map.gov.hk/gs/api/v1.0.0/locationSearch?q=Hong%20Kong%20Palace%20Museum",
+    "coordinateBasis": "香港地政总署 LocationSearchAPI 地点代表点；HK1980 Grid 经地政总署转换服务转为 WGS84 经纬度，数值保留 5 位小数。来源未给出点位精度，非测绘／导航入口精度声明。",
+    "approximate": true,
+    "checkedAt": "2026-09-08"
+  },
+  {
+    "id": "observation-wheel",
+    "coordinates": [
+      114.16176,
+      22.28533
+    ],
+    "anchor": "香港摩天轮设施地点代表点（中环民光街 33 号）",
+    "anchorType": "attraction",
+    "sourceUrl": "https://hkow.hk/",
+    "coordinateSourceUrl": "https://www.map.gov.hk/gs/api/v1.0.0/locationSearch?q=Hong%20Kong%20Observation%20Wheel",
+    "coordinateBasis": "香港地政总署 LocationSearchAPI 地点代表点；HK1980 Grid 经地政总署转换服务转为 WGS84 经纬度，数值保留 5 位小数。来源未给出点位精度，非测绘／导航入口精度声明。",
+    "approximate": true,
+    "checkedAt": "2026-09-08"
+  }
+]

@@ -1,0 +1,141 @@
+{
+  "attribution": "© OpenStreetMap contributors · ODbL 1.0",
+  "policy": "Live source snapshots for independent close views only. Not a measured architectural survey. No replacements for the frozen city terrain/boundary.",
+  "records": [
+    {
+      "id": "xiaohe",
+      "bbox": [
+        120.1268,
+        30.3075,
+        120.1339,
+        30.314
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=120.1268,30.3075,120.1339,30.314",
+      "file": "xiaohe-osm.json",
+      "sha256": "73848c54e6859760199bf6231cb5f7a40b27d0c9a9a69cb5df444075b70f2603",
+      "bytes": 637495,
+      "fetchedAt": "2026-09-11T03:40:51Z",
+      "elements": 3094
+    },
+    {
+      "id": "faxi",
+      "bbox": [
+        120.0856,
+        30.2268,
+        120.093,
+        30.2336
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=120.0856,30.2268,120.093,30.2336",
+      "file": "faxi-osm.json",
+      "sha256": "294fe93b5ebc89e2aa24b8179cb87c600bf5a4c0aa96e6c2c3b0c133906f4dde",
+      "bytes": 218385,
+      "fetchedAt": "2026-09-11T03:40:53Z",
+      "elements": 1048
+    },
+    {
+      "id": "lingyin",
+      "bbox": [
+        120.0928,
+        30.2394,
+        120.1008,
+        30.247
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=120.0928,30.2394,120.1008,30.247",
+      "file": "lingyin-osm.json",
+      "sha256": "238e0bdaf91bacebfcf50446fd52a2d506de387528944878438be5401d324552",
+      "bytes": 320965,
+      "fetchedAt": "2026-09-11T03:40:57Z",
+      "elements": 1749
+    },
+    {
+      "id": "longmen",
+      "bbox": [
+        119.94,
+        29.895,
+        119.955,
+        29.909
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=119.94,29.895,119.955,29.909",
+      "file": "longmen-osm.json",
+      "sha256": "450d3c4901002dceea92d4880e488419da3b4317679503666ed8812e8d3e1a75",
+      "bytes": 561217,
+      "fetchedAt": "2026-09-11T03:41:00Z",
+      "elements": 2644
+    },
+    {
+      "id": "tianmu",
+      "bbox": [
+        119.417,
+        30.319,
+        119.454,
+        30.359
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=119.417,30.319,119.454,30.359",
+      "file": "tianmu-osm.json",
+      "sha256": "bda4c465a62cabbf6f7cc2929262416b54c59fb4fe5c7fb6695422eb5cbdc745",
+      "bytes": 758259,
+      "fetchedAt": "2026-09-11T03:41:03Z",
+      "elements": 3988
+    },
+    {
+      "id": "xixi",
+      "bbox": [
+        120.049,
+        30.255,
+        120.078,
+        30.281
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=120.049,30.255,120.078,30.281",
+      "file": "xixi-osm.json",
+      "sha256": "daf802d5a349073f2fe2387cf602e365ff809ceb4dcbb6dbdab9e4bb674c8398",
+      "bytes": 6814962,
+      "fetchedAt": "2026-09-11T03:41:10Z",
+      "elements": 36731
+    },
+    {
+      "id": "olympic",
+      "bbox": [
+        120.216,
+        30.222,
+        120.239,
+        30.244
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=120.216,30.222,120.239,30.244",
+      "file": "olympic-osm.json",
+      "sha256": "68ad1b34735e06dc38f07fab4e825176503c0ebb6ed6654251772e9a212c869d",
+      "bytes": 2220151,
+      "fetchedAt": "2026-09-11T03:41:14Z",
+      "elements": 11560
+    },
+    {
+      "id": "hubin-yintai",
+      "bbox": [
+        120.1538,
+        30.252,
+        120.1613,
+        30.2595
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=120.1538,30.252,120.1613,30.2595",
+      "file": "hubin-yintai-osm.json",
+      "sha256": "82b45d98318c35072f4513ac0923073775d1c65c02e2cae4e913dd379fb60577",
+      "bytes": 827659,
+      "fetchedAt": "2026-09-11T03:41:18Z",
+      "elements": 3254
+    },
+    {
+      "id": "zshc",
+      "bbox": [
+        120.394,
+        30.212,
+        120.463,
+        30.269
+      ],
+      "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=120.394,30.212,120.463,30.269",
+      "file": "zshc-osm.json",
+      "sha256": "89d322ec28f53e55739144c6a9f6ce4ca54ebc18e81170e4e0074ba287b150dd",
+      "bytes": 7013739,
+      "fetchedAt": "2026-09-11T04:11:20Z",
+      "elements": 36886
+    }
+  ]
+}

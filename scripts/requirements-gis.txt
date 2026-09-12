@@ -1,0 +1,4 @@
+# Optional offline GIS rebuild/check dependencies. Not needed to run the website.
+numpy>=1.24,<3
+Pillow>=10,<13
+shapely>=2.1,<3

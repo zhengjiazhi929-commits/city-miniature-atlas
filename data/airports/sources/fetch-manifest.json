@@ -1,0 +1,96 @@
+{
+  "snapshotDate": "2026-09-09",
+  "successfulRequests": [
+    {
+      "file": "hangzhou-osm-map-central.json",
+      "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=120.41,30.22,120.45,30.25",
+      "method": "GET",
+      "savedAt": "2026-09-09T03:29:33.426703+00:00",
+      "sha256": "0c80826c4cf44161b8f311739e6d8dd45343fe110a0479b3de882847c214501c",
+      "role": "Full public OSM bbox response, including source nodes/ways/relations; only airport-related features are selected for runtime."
+    },
+    {
+      "file": "hong-kong-west-osm-map.json",
+      "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=113.867,22.303,113.909,22.335",
+      "method": "GET",
+      "savedAt": "2026-09-09T03:31:26.881141+00:00",
+      "sha256": "c2b2c6f876a4176baf853ad38bba462f53d9064c67ebcece8fe27f2fd78f8c3d",
+      "role": "Full public OSM bbox response, including source nodes/ways/relations; only airport-related features are selected for runtime."
+    },
+    {
+      "file": "hong-kong-east-osm-map.json",
+      "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=113.910,22.296,113.947,22.329",
+      "method": "GET",
+      "savedAt": "2026-09-09T03:31:33.986271+00:00",
+      "sha256": "34ce261b57433710998a1aa3c6dd935b78b4cf9895564db0b491ed5f1c460613",
+      "role": "Full public OSM bbox response, including source nodes/ways/relations; only airport-related features are selected for runtime."
+    },
+    {
+      "file": "hong-kong-northeast-osm-map.json",
+      "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=113.909,22.325,113.926,22.340",
+      "method": "GET",
+      "savedAt": "2026-09-09T03:39:49.386094+00:00",
+      "sha256": "2d3b24b2a0421becbdd9b799a37fa317a8f0fd3d1204a9532d2a802f80d3082f",
+      "role": "Full public OSM bbox response, including source nodes/ways/relations; only airport-related features are selected for runtime."
+    },
+    {
+      "file": "hong-kong-southwest-osm-map.json",
+      "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=113.888,22.290,113.913,22.307",
+      "method": "GET",
+      "savedAt": "2026-09-09T03:39:53.288843+00:00",
+      "sha256": "588a0468bf75581eb194046026df2b4876d561df09c56134296e8f395f9aa553",
+      "role": "Full public OSM bbox response, including source nodes/ways/relations; only airport-related features are selected for runtime."
+    },
+    {
+      "file": "wuhan-central-osm-map.json",
+      "url": "https://api.openstreetmap.org/api/0.6/map.json?bbox=114.19,30.75,114.24,30.80",
+      "method": "GET",
+      "savedAt": "2026-09-09T03:31:33.153137+00:00",
+      "sha256": "77496855d19caf351e9b894b369ea9a9a319c5b49836c9206f8222ce04fd7509",
+      "role": "Full public OSM bbox response, including source nodes/ways/relations; only airport-related features are selected for runtime."
+    },
+    {
+      "file": "hangzhou-nominatim.json",
+      "url": "https://nominatim.openstreetmap.org/search?q=Hangzhou+Xiaoshan+International+Airport&format=jsonv2&polygon_geojson=1&extratags=1&limit=2",
+      "method": "GET",
+      "savedAt": "2026-09-09T03:30:04.213122+00:00",
+      "sha256": "9a671c4cfc4dbe7dd53b14bcb6c3751853d00bd87881eb3dc02a39a7fe266dce",
+      "role": "Named aerodrome representative point and complete mapped boundary, matched by aeroway type and name."
+    },
+    {
+      "file": "hong-kong-nominatim.json",
+      "url": "https://nominatim.openstreetmap.org/search?q=Hong+Kong+International+Airport&format=jsonv2&polygon_geojson=1&extratags=1&limit=2",
+      "method": "GET",
+      "savedAt": "2026-09-09T03:31:25.579352+00:00",
+      "sha256": "65d75c76ac6249ea256debef207eca2a8f9792d0bc9140db4e6c209bd2d95593",
+      "role": "Named aerodrome representative point and complete mapped boundary, matched by aeroway type and name."
+    },
+    {
+      "file": "wuhan-nominatim.json",
+      "url": "https://nominatim.openstreetmap.org/search?q=%E6%AD%A6%E6%B1%89%E5%A4%A9%E6%B2%B3%E5%9B%BD%E9%99%85%E6%9C%BA%E5%9C%BA&format=jsonv2&polygon_geojson=1&extratags=1&limit=2",
+      "method": "GET",
+      "savedAt": "2026-09-09T03:31:27.603818+00:00",
+      "sha256": "87b30118c0992a27a63f6f7628f316ca46cacd3d42c42e773c67d653cf53c1b0",
+      "role": "Named aerodrome representative point and complete mapped boundary, matched by aeroway type and name."
+    }
+  ],
+  "failedRequests": [
+    {
+      "file": "failed-hong-kong-osm-raw.html",
+      "usedForRuntime": false,
+      "reason": "Unsuccessful Overpass/public map request; preserved only as retrieval evidence."
+    },
+    {
+      "file": "failed-wuhan-osm-raw.html",
+      "usedForRuntime": false,
+      "reason": "Unsuccessful Overpass/public map request; preserved only as retrieval evidence."
+    },
+    {
+      "file": "failed-hangzhou-osm-raw.html",
+      "usedForRuntime": false,
+      "reason": "Unsuccessful Overpass/public map request; preserved only as retrieval evidence."
+    }
+  ],
+  "rebuildCommand": "python3 outputs/china-atlas/data/airports/sources/build-airports.py",
+  "networkNote": "Nominatim requests were sequential; broad public OSM map queries were narrowed after size-limit responses. No data was posted or edited externally."
+}

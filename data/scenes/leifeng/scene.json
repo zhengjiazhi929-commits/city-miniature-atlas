@@ -1,0 +1,202 @@
+{
+  "camera": {
+    "position": [
+      5.423999386398343,
+      5.920938700216141,
+      -7.1857712122923685
+    ],
+    "target": [
+      0.02399938639834226,
+      1.1209387002161404,
+      -0.18577121229236854
+    ]
+  },
+  "overviewCamera": {
+    "position": [
+      17.02399938639834,
+      18.12093870021614,
+      -23.18577121229237
+    ],
+    "target": [
+      0.02399938639834226,
+      1.1209387002161404,
+      -0.18577121229236854
+    ]
+  },
+  "hotspots": [
+    {
+      "label": "雷峰塔",
+      "position": [
+        0.02399938639834226,
+        2.1530031481588305,
+        -0.18577121229236854
+      ],
+      "description": "塔中心取自 OSM 八角塔基，约71.7米通高由来源标注校准。塔檐、窗格与栏杆为简化外观，非建筑测绘模型。"
+    },
+    {
+      "label": "西湖南岸",
+      "position": [
+        -3.8399018128381566,
+        0,
+        -7.110997971485612
+      ],
+      "description": "湖岸与水域依据 OSM 西湖多边形裁切，水面使用本取景框内 DEM 水域采样中位值，非测量水位。"
+    },
+    {
+      "label": "南山路",
+      "position": [
+        1.120675344141482,
+        0.2535951998767898,
+        3.614198968862458
+      ],
+      "description": "道路与步行路径沿已记录的 OSM 线绘制；宽度为制图显示宽度。未添加虚构林间路径。"
+    }
+  ],
+  "description": "真实地形与水岸中的雷峰塔。约一公里取景框，非景区边界；塔体为依据照片与已知尺寸的简化外观。",
+  "diagnostics": {
+    "bounds": [
+      120.1398,
+      30.2293,
+      120.1502,
+      30.2383
+    ],
+    "frameRole": "Authored approximately one-kilometre rectangular view frame; NOT a scenic-area administrative boundary.",
+    "scale": 1,
+    "displayMetersToUnits": 0.019962561855758034,
+    "demTiles": 4,
+    "demStats": [
+      {
+        "file": "dem-15-27319-13494.png",
+        "changedPixels": 2,
+        "totalPixels": 65536,
+        "passes": 2,
+        "minimumBefore": -222.90234375,
+        "maximumBefore": 65.94140625,
+        "minimumAfter": -166.34375,
+        "maximumAfter": 65.94140625,
+        "meanAbsoluteChange": 0.007109880447387695,
+        "maximumAbsoluteChange": 237.31640625
+      },
+      {
+        "file": "dem-15-27319-13495.png",
+        "changedPixels": 0,
+        "totalPixels": 65536,
+        "passes": 1,
+        "minimumBefore": 9.00390625,
+        "maximumBefore": 192.8671875,
+        "minimumAfter": 9.00390625,
+        "maximumAfter": 192.8671875,
+        "meanAbsoluteChange": 0,
+        "maximumAbsoluteChange": 0
+      },
+      {
+        "file": "dem-15-27320-13494.png",
+        "changedPixels": 8,
+        "totalPixels": 65536,
+        "passes": 2,
+        "minimumBefore": -478.7578125,
+        "maximumBefore": 96.265625,
+        "minimumAfter": -143.08984375,
+        "maximumAfter": 96.265625,
+        "meanAbsoluteChange": 0.05177038908004761,
+        "maximumAbsoluteChange": 493.15234375
+      },
+      {
+        "file": "dem-15-27320-13495.png",
+        "changedPixels": 0,
+        "totalPixels": 65536,
+        "passes": 1,
+        "minimumBefore": 12,
+        "maximumBefore": 172.7421875,
+        "minimumAfter": 12,
+        "maximumAfter": 172.7421875,
+        "meanAbsoluteChange": 0,
+        "maximumAbsoluteChange": 0
+      }
+    ],
+    "demGrid": 256,
+    "terrainTriangles": 83317,
+    "terrainMetersRange": [
+      9.19218941964209,
+      89.62130182667909
+    ],
+    "lakeLevelMetersEstimated": 10.48714799818481,
+    "towerGroundMeters": 46.63919442968102,
+    "towerTopMeters": 118.33919442968102,
+    "towerHeightMeters": 71.7,
+    "sourceFeatures": 192,
+    "roads": 73,
+    "buildingFootprints": 77,
+    "waterPolygons": 6,
+    "towerAnchor": [
+      120.1450125,
+      30.2338837
+    ],
+    "nanshanAnchor": [
+      120.1455837,
+      30.2321737
+    ],
+    "terrainCoverage": "true land polygons; water removed from terrain top to avoid overlapping surfaces",
+    "camera": {
+      "position": [
+        5.423999386398343,
+        5.920938700216141,
+        -7.1857712122923685
+      ],
+      "target": [
+        0.02399938639834226,
+        1.1209387002161404,
+        -0.18577121229236854
+      ]
+    },
+    "overviewCamera": {
+      "position": [
+        17.02399938639834,
+        18.12093870021614,
+        -23.18577121229237
+      ],
+      "target": [
+        0.02399938639834226,
+        1.1209387002161404,
+        -0.18577121229236854
+      ]
+    },
+    "hotspots": [
+      {
+        "label": "雷峰塔",
+        "position": [
+          0.02399938639834226,
+          2.1530031481588305,
+          -0.18577121229236854
+        ],
+        "description": "塔中心取自 OSM 八角塔基，约71.7米通高由来源标注校准。塔檐、窗格与栏杆为简化外观，非建筑测绘模型。"
+      },
+      {
+        "label": "西湖南岸",
+        "position": [
+          -3.8399018128381566,
+          0,
+          -7.110997971485612
+        ],
+        "description": "湖岸与水域依据 OSM 西湖多边形裁切，水面使用本取景框内 DEM 水域采样中位值，非测量水位。"
+      },
+      {
+        "label": "南山路",
+        "position": [
+          1.120675344141482,
+          0.2535951998767898,
+          3.614198968862458
+        ],
+        "description": "道路与步行路径沿已记录的 OSM 线绘制；宽度为制图显示宽度。未添加虚构林间路径。"
+      }
+    ],
+    "buildMs": 2219.400000002235,
+    "finite": true,
+    "triangles": 130809,
+    "meshes": 15,
+    "memory": {
+      "geometries": 14,
+      "textures": 1
+    }
+  }
+}

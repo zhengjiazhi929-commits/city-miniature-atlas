@@ -1,0 +1,172 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "work/colour-0.0.2/before-cache-integrity",
+      "pass": true
+    },
+    {
+      "name": "work/colour-0.0.2/before-shared-owner-disposal",
+      "pass": true,
+      "detail": {
+        "instances": 18,
+        "materials": 12,
+        "geometries": 20
+      }
+    },
+    {
+      "name": "releases/0.0.2-cache-integrity",
+      "pass": true
+    },
+    {
+      "name": "releases/0.0.2-shared-owner-disposal",
+      "pass": true,
+      "detail": {
+        "instances": 28,
+        "materials": 24,
+        "geometries": 20
+      }
+    },
+    {
+      "name": "cache-invalidated-for-colour-source",
+      "pass": true
+    },
+    {
+      "name": "building-count-preserved",
+      "pass": true,
+      "detail": {
+        "before": 3380,
+        "after": 3380
+      }
+    },
+    {
+      "name": "all-nonbuilding-fabric-identical",
+      "pass": true,
+      "detail": {
+        "meshCount": 10
+      }
+    },
+    {
+      "name": "all-building-matrices-geometries-placements-and-reflection-properties-preserved",
+      "pass": true,
+      "detail": {
+        "errors": [],
+        "changedSurfaceCount": 6760
+      }
+    },
+    {
+      "name": "ordinary-building-instanceColor-removed",
+      "pass": true
+    },
+    {
+      "name": "one-shared-geometry-per-building-asset",
+      "pass": true,
+      "detail": {
+        "generic-courtyard": 1,
+        "generic-stepped": 1,
+        "generic-ribbon": 1,
+        "generic-point": 1,
+        "residential-slab": 1,
+        "residential-twins": 1,
+        "residential-gallery": 1,
+        "residential-point": 1,
+        "commercial-office": 1,
+        "commercial-block": 1,
+        "industrial-sheds": 1,
+        "industrial-logistics": 1
+      }
+    },
+    {
+      "name": "five-realized-palette-groups",
+      "pass": true,
+      "detail": {
+        "paletteCounts": {
+          "porcelain": 884,
+          "pearl": 1333,
+          "mineral": 1025,
+          "silver": 108,
+          "bluegrey": 30
+        },
+        "coherentSourceClassGroups": 2327
+      }
+    },
+    {
+      "name": "buildingBlocks-unchanged",
+      "pass": true,
+      "detail": {
+        "before": 3380,
+        "after": 3380
+      }
+    },
+    {
+      "name": "trees-unchanged",
+      "pass": true,
+      "detail": {
+        "before": 6500,
+        "after": 6500
+      }
+    },
+    {
+      "name": "urbanGroups-unchanged",
+      "pass": true,
+      "detail": {
+        "before": 3380,
+        "after": 3380
+      }
+    },
+    {
+      "name": "foundationTriangles-unchanged",
+      "pass": true,
+      "detail": {
+        "before": 261516,
+        "after": 261516
+      }
+    },
+    {
+      "name": "triangles-unchanged",
+      "pass": true,
+      "detail": {
+        "before": 8534832,
+        "after": 8534832
+      }
+    },
+    {
+      "name": "urban-greenery-count-preserved",
+      "pass": true
+    },
+    {
+      "name": "nonpalette-code-assets-and-geographic-files-byte-identical",
+      "pass": true,
+      "detail": {
+        "files": 625,
+        "changedFiles": []
+      }
+    }
+  ],
+  "errors": [],
+  "paletteCounts": {
+    "porcelain": 884,
+    "pearl": 1333,
+    "mineral": 1025,
+    "silver": 108,
+    "bluegrey": 30
+  },
+  "sourceClassGroups": 2327,
+  "instances": 3380,
+  "batching": {
+    "before": 12,
+    "after": 22,
+    "buildingDrawCallsBefore": 30,
+    "buildingDrawCallsAfter": 57,
+    "buildingDrawCallDelta": 27,
+    "fabricDrawCallsBefore": 40,
+    "fabricDrawCallsAfter": 67,
+    "uniqueBuildingGeometries": 12
+  },
+  "cacheKeys": [
+    "0e04209324b216af5b04acc22092593eb6634a83d7ea0df4a6f55db3c0b5333e",
+    "9ded619e170d2029e39fe62f08f25f846af9eb9164c8457eb94a29a194149ebb"
+  ],
+  "method": "Actual cached Float32 instance matrices matched by asset ID and source parcel/coordinate; complete geometry buffers/groups, placement metadata including heightRhythm, all standard material properties except wall/glass base colour, and all nonbuilding fabric compared. Shared cache geometry/material owners disposed once in an ObjectLoader reconstruction.",
+  "limits": "Visual palette acceptance is separate. The opaque asset slot includes its authored plinth and shared-space details, which follow the wall multiplier; the independent terrain, foundation, road and vegetation geometry/materials remain byte-identical. Shared-owner disposal check is an isolated reconstruction, not browser navigation instrumentation."
+}

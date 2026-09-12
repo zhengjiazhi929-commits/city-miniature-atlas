@@ -1,0 +1,1 @@
+[out:json][timeout:30];(nwr["aeroway"~"^(aerodrome|runway|terminal|apron)$"](22.285,113.86,22.355,113.97););out meta geom;

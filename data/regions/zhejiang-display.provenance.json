@@ -1,0 +1,351 @@
+{
+  "preparedDate": "2026-09-08",
+  "source": {
+    "provider": "geoBoundaries gbHumanitarian / HDX",
+    "url": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbHumanitarian/CHN/ADM2/geoBoundaries-CHN-ADM2.geojson",
+    "commit": "9469f09",
+    "sourceSha256": "12af10d8810b00d7258df7cc6cafa70023a3db41fc48e9f69846f6cfa543ac0b",
+    "metadataUrl": "https://www.geoboundaries.org/api/current/gbHumanitarian/CHN/ADM2/",
+    "cityCollectionPath": "./data/regions/zhejiang-cities.geojson",
+    "cityCollectionSha256": "96568111efa877fe28788dec625177946f4a79724c4523fc3e9bde709ddbafe0",
+    "citySourceFiles": [
+      {
+        "id": "bulk-99377448B62171560544069",
+        "cityId": "hangzhou",
+        "name": "杭州",
+        "path": "./data/regions/prefectures/bulk-99377448B62171560544069.geojson",
+        "sha256": "e21f9166ea2f2fffe7c8ae62a1cfc5c0c3c489bc469834dcfb80b581010df558"
+      },
+      {
+        "id": "bulk-99377448B90432234832744",
+        "cityId": "ningbo",
+        "name": "宁波",
+        "path": "./data/regions/prefectures/bulk-99377448B90432234832744.geojson",
+        "sha256": "a6487e996d77265c837d18934015a70937e9d3395edd01535ae28b04fec71f2c"
+      },
+      {
+        "id": "bulk-99377448B43290754724916",
+        "cityId": "wenzhou",
+        "name": "温州",
+        "path": "./data/regions/prefectures/bulk-99377448B43290754724916.geojson",
+        "sha256": "4ef75a355138dbc0675d3bbd37857198420acdfa5ffd26c40b43346fd383281b"
+      },
+      {
+        "id": "bulk-99377448B74545092839940",
+        "cityId": "jiaxing",
+        "name": "嘉兴",
+        "path": "./data/regions/prefectures/bulk-99377448B74545092839940.geojson",
+        "sha256": "abb01f8a52518470003e75525c0cffe1cc05bcde0762efe1bc4c2f53a75f3ad8"
+      },
+      {
+        "id": "bulk-99377448B80814313072010",
+        "cityId": "huzhou",
+        "name": "湖州",
+        "path": "./data/regions/prefectures/bulk-99377448B80814313072010.geojson",
+        "sha256": "16bdf1607aa5f8b1414fda443c2b6801b8aec76f2629da06ae6636552ae8d724"
+      },
+      {
+        "id": "bulk-99377448B24434605169468",
+        "cityId": "shaoxing",
+        "name": "绍兴",
+        "path": "./data/regions/prefectures/bulk-99377448B24434605169468.geojson",
+        "sha256": "3674358f74009c3a426ab2846f1d8343132cc859f19b084914b5f39f5ae955d0"
+      },
+      {
+        "id": "bulk-99377448B74997352647261",
+        "cityId": "jinhua",
+        "name": "金华",
+        "path": "./data/regions/prefectures/bulk-99377448B74997352647261.geojson",
+        "sha256": "4958029fc2134c305414cfdf147750f7f470fbae08aeef32291f24974d24d9c8"
+      },
+      {
+        "id": "bulk-99377448B93552268743201",
+        "cityId": "quzhou",
+        "name": "衢州",
+        "path": "./data/regions/prefectures/bulk-99377448B93552268743201.geojson",
+        "sha256": "d66f379aef80f6a31c7f67e7501b7e76daf29f468caa22a87a131cfabf489166"
+      },
+      {
+        "id": "bulk-99377448B27898185166352",
+        "cityId": "zhoushan",
+        "name": "舟山",
+        "path": "./data/regions/prefectures/bulk-99377448B27898185166352.geojson",
+        "sha256": "57047c591d85811d426c6706edad18ca4b64f63b7c9fe22c971655525ea6e999"
+      },
+      {
+        "id": "bulk-99377448B96011767840326",
+        "cityId": "taizhou",
+        "name": "台州",
+        "path": "./data/regions/prefectures/bulk-99377448B96011767840326.geojson",
+        "sha256": "9bf68e920556f7a7684b5d618c742a03a92cee4bea4449119c88872d86769a2f"
+      },
+      {
+        "id": "bulk-99377448B41834946891688",
+        "cityId": "lishui",
+        "name": "丽水",
+        "path": "./data/regions/prefectures/bulk-99377448B41834946891688.geojson",
+        "sha256": "5ec8612d7f084cab0b95ba05fdb84d3f66f9299f4bea6f48a831d34272f65833"
+      }
+    ]
+  },
+  "changes": [
+    "Unioned all 11 original city polygon geometries.",
+    "Normalized exterior ring orientation; no simplification, buffer, nearest-neighbor assignment, hole fill, or added islands.",
+    "Updated city collection metadata only; every city coordinate exactly matches its original source file."
+  ],
+  "originalOsmFilesUnchanged": [
+    "zhejiang.geojson",
+    "hangzhou.geojson"
+  ],
+  "passed": true,
+  "cityCount": 11,
+  "cityGeometryUnchanged": true,
+  "displayGeometryValid": true,
+  "displayBytes": 75891,
+  "displaySha256": "dc988cf22d7924d08d95d260900dfef5e05786a1038f735a3ea86623d46003ab",
+  "cityCollectionSha256": "96568111efa877fe28788dec625177946f4a79724c4523fc3e9bde709ddbafe0",
+  "geometryCounts": {
+    "components": 24,
+    "holes": 0,
+    "coordinates": 2114,
+    "sourceCityComponents": 33
+  },
+  "coverage": {
+    "method": "Same-source polygon union; area ratios use Web Mercator projection and are not official land-area statistics.",
+    "cityUnionOutsideProvincePercent": 0,
+    "provinceNotCoveredByCityUnionPercent": 0,
+    "cityPairwiseOverlapProjectedArea": 0.0,
+    "provinceBoundarySource": "Union of the same 11 geoBoundaries / HDX 2020 city geometries",
+    "unassignedAreasPolicy": "No displayed province area outside the city union; preserve all source components and inland water layers.",
+    "displayOutline": "./data/regions/zhejiang-display.geojson"
+  },
+  "previousMixedSourceComparison": {
+    "reference": "Original OSM relation 553302 province file; retained unchanged for provenance and other uses.",
+    "cityUnionOutsideOriginalOsmProvincePercent": 1.4789615938032623,
+    "originalOsmProvinceNotCoveredByCitiesPercent": 33.24634215634287,
+    "originalOsmProvinceSha256": "e84da7ebf3864e1350b8a2f06996456ed58d9295c791fad4cb608fd9e1666a2f"
+  },
+  "sourceComponentsFullyRetained": true,
+  "checks": [
+    {
+      "id": "hangzhou",
+      "geometryExactlyMatchesOriginalSource": true,
+      "components": 1,
+      "holes": 0,
+      "coordinates": 245,
+      "areaOutsideDisplayOutline": 0.0,
+      "navigationPointInsideDisplayOutline": true
+    },
+    {
+      "id": "ningbo",
+      "geometryExactlyMatchesOriginalSource": true,
+      "components": 7,
+      "holes": 0,
+      "coordinates": 690,
+      "areaOutsideDisplayOutline": 0.0,
+      "navigationPointInsideDisplayOutline": true
+    },
+    {
+      "id": "wenzhou",
+      "geometryExactlyMatchesOriginalSource": true,
+      "components": 4,
+      "holes": 0,
+      "coordinates": 362,
+      "areaOutsideDisplayOutline": 0.0,
+      "navigationPointInsideDisplayOutline": true
+    },
+    {
+      "id": "jiaxing",
+      "geometryExactlyMatchesOriginalSource": true,
+      "components": 1,
+      "holes": 0,
+      "coordinates": 139,
+      "areaOutsideDisplayOutline": 0.0,
+      "navigationPointInsideDisplayOutline": true
+    },
+    {
+      "id": "huzhou",
+      "geometryExactlyMatchesOriginalSource": true,
+      "components": 1,
+      "holes": 0,
+      "coordinates": 107,
+      "areaOutsideDisplayOutline": 0.0,
+      "navigationPointInsideDisplayOutline": true
+    },
+    {
+      "id": "shaoxing",
+      "geometryExactlyMatchesOriginalSource": true,
+      "components": 1,
+      "holes": 0,
+      "coordinates": 158,
+      "areaOutsideDisplayOutline": 0.0,
+      "navigationPointInsideDisplayOutline": true
+    },
+    {
+      "id": "jinhua",
+      "geometryExactlyMatchesOriginalSource": true,
+      "components": 1,
+      "holes": 0,
+      "coordinates": 182,
+      "areaOutsideDisplayOutline": 0.0,
+      "navigationPointInsideDisplayOutline": true
+    },
+    {
+      "id": "quzhou",
+      "geometryExactlyMatchesOriginalSource": true,
+      "components": 1,
+      "holes": 0,
+      "coordinates": 176,
+      "areaOutsideDisplayOutline": 0.0,
+      "navigationPointInsideDisplayOutline": true
+    },
+    {
+      "id": "zhoushan",
+      "geometryExactlyMatchesOriginalSource": true,
+      "components": 7,
+      "holes": 0,
+      "coordinates": 206,
+      "areaOutsideDisplayOutline": 0.0,
+      "navigationPointInsideDisplayOutline": true
+    },
+    {
+      "id": "taizhou",
+      "geometryExactlyMatchesOriginalSource": true,
+      "components": 8,
+      "holes": 0,
+      "coordinates": 605,
+      "areaOutsideDisplayOutline": 0.0,
+      "navigationPointInsideDisplayOutline": true
+    },
+    {
+      "id": "lishui",
+      "geometryExactlyMatchesOriginalSource": true,
+      "components": 1,
+      "holes": 0,
+      "coordinates": 175,
+      "areaOutsideDisplayOutline": 0.0,
+      "navigationPointInsideDisplayOutline": true
+    }
+  ],
+  "inlandWaterProbes": [
+    {
+      "name": "西湖中部",
+      "coordinate": [
+        120.144,
+        30.244
+      ],
+      "withinDisplay": true
+    },
+    {
+      "name": "千岛湖中部",
+      "coordinate": [
+        119.015,
+        29.59
+      ],
+      "withinDisplay": true
+    }
+  ],
+  "waterComparison": {
+    "waterTileZoom": 7,
+    "sourceSnapshot": "20260830_080001_pt",
+    "method": "Web Mercator projected area ratios; current coarse vector display-layer comparison, not a precise coastline/land register audit.",
+    "displayUnionOceanClassOverlapPercent": 0.04765673221396936,
+    "oldProvinceOceanClassOverlapPercent": 29.475265450517952,
+    "oldUnassignedPartMappedOceanPercent": 88.56214973527726,
+    "oldUnassignedPartNotMappedWaterPercent": 10.828087732169454,
+    "wenzhouSourceOceanOverlapPercent": 0.07118602373613685,
+    "coastalUnassignedLandProbes": [
+      {
+        "coordinate": [
+          120.84949126585138,
+          27.859033371839836
+        ],
+        "oldProvince": true,
+        "wenzhouCity": false,
+        "anyCity": false,
+        "mappedWaterZ7": false,
+        "bounds": [
+          120.64887090543637,
+          27.688392321785656,
+          120.91346740722656,
+          28.0289551682242
+        ]
+      },
+      {
+        "coordinate": [
+          121.07226666740559,
+          28.267182363370537
+        ],
+        "oldProvince": true,
+        "wenzhouCity": false,
+        "anyCity": false,
+        "mappedWaterZ7": false,
+        "bounds": [
+          121.02288818400001,
+          28.14587057717766,
+          121.18537902832031,
+          28.389282227
+        ]
+      },
+      {
+        "coordinate": [
+          120.9659121920754,
+          27.91494602400705
+        ],
+        "oldProvince": true,
+        "wenzhouCity": false,
+        "anyCity": false,
+        "mappedWaterZ7": false,
+        "bounds": [
+          120.84342956542969,
+          27.83664736757642,
+          121.0858154296875,
+          27.978636367553747
+        ]
+      },
+      {
+        "coordinate": [
+          120.62091114639492,
+          27.52442518143267
+        ],
+        "oldProvince": true,
+        "wenzhouCity": false,
+        "anyCity": false,
+        "mappedWaterZ7": false,
+        "bounds": [
+          120.53649902300002,
+          27.479492187,
+          120.67245483398438,
+          27.588632167960085
+        ]
+      },
+      {
+        "coordinate": [
+          120.99791263536073,
+          28.06742549776545
+        ],
+        "oldProvince": true,
+        "wenzhouCity": false,
+        "anyCity": false,
+        "mappedWaterZ7": false,
+        "bounds": [
+          120.94614961428172,
+          27.980455528671527,
+          121.07414245605469,
+          28.158605081245824
+        ]
+      }
+    ],
+    "limitations": [
+      "z7 tile water geometry is generalized and may differ from current higher-resolution coastline.",
+      "The screenshot identifies the coastal strip visually; probes check the same regional source-mismatch mechanism, not pixel-exact georeferencing.",
+      "No sampled land point is assigned to a city or used to change source geometry."
+    ]
+  },
+  "limitations": [
+    "This is a display union of the fixed 2020 prefecture source, not the complete current administrative marine extent.",
+    "All source components are retained; this does not guarantee every real-world small island is in that generalized source.",
+    "Inland lakes/rivers are represented by the existing water layers, not artificial holes in administrative polygons.",
+    "The union can retain small nearshore water overlap because the city coastline is generalized; no nearest-neighbor reassignment or hand-drawn coastline was used."
+  ]
+}

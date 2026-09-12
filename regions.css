@@ -1,0 +1,52 @@
+#geographic-map{background:#efede5}
+.regional-viewer,.region-canvas,.region-labels{position:absolute;inset:0;width:100%;height:100%}
+.region-canvas{display:block;outline:none;cursor:grab;touch-action:none}
+.region-canvas:active{cursor:grabbing}
+.region-canvas:focus-visible{outline:2px solid #a86442;outline-offset:-4px}
+.region-labels{pointer-events:none;overflow:hidden}
+.region-marker{position:absolute;transform:translate(-50%,-100%);display:flex;align-items:center;flex-direction:column;gap:7px;pointer-events:none;border:0;padding:0;background:none;color:#274b3d;font:12px/1.4 system-ui,sans-serif;filter:drop-shadow(0 2px 3px #314a3020)}
+.region-marker .geo-marker-label{pointer-events:auto;cursor:pointer;white-space:nowrap;padding:5px 9px;border:1px solid #6e85634d;background:#fffdf4f2;border-radius:3px;font-weight:500}
+.region-marker .geo-marker-dot{pointer-events:auto;cursor:pointer;width:9px;height:9px;border-radius:50%;border:2px solid #fffbed;background:#a96544;box-shadow:0 0 0 1px #8f694b44}
+.region-marker[aria-pressed=true]{z-index:2}
+.region-marker[aria-pressed=true] .geo-marker-label{background:#285543;color:#fffbed;border-color:#285543}
+.region-marker[aria-pressed=true] .geo-marker-dot{width:12px;height:12px;background:#285543}
+.region-marker:focus-visible .geo-marker-label{outline:2px solid #a86442;outline-offset:3px}
+.region-city-marker .geo-marker-label{font-size:11px;background:#fffdf4dc}
+.region-credit{position:absolute;right:20px;bottom:13px;max-width:75%;color:#6d7567;font:9px/1.5 system-ui,sans-serif;text-align:right}
+.region-credit a{text-decoration:none}
+.region-credit a:hover{text-decoration:underline}
+.region-detail-note{position:absolute;left:26px;top:25px;color:#68765f;font:11px/1.6 system-ui,sans-serif;max-width:55%}
+.geographic-mode .view-tools{top:85px}
+.geographic-mode .compass{display:block}
+.geographic-mode .scene-caption,.geographic-mode .scene-note{background:transparent;bottom:42px}
+
+/* Province geometry, map labels and the city index share one hover state. */
+.place-row.is-city-hovered{color:#a04931;background:#526c4020;padding-left:8px;transition:background .15s,padding-left .15s}
+.region-city-marker[aria-pressed=true] .geo-marker-label{background:#315a3d;border-color:#315a3d;color:#fffbea}
+
+/* Province labels always remain visible while their anchor is in view. */
+.zhejiang-province .region-city-marker{width:12px;height:12px;display:block;transform:translate(-50%,-50%)}
+.zhejiang-province .region-city-marker .geo-marker-dot{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:10px;height:10px;z-index:1}
+.zhejiang-province .region-city-marker .geo-marker-label{position:absolute;transform:translate(-50%,-50%);font-size:12px;font-weight:600;color:#163f2d;background:#fffdf5;border-color:#8b9e7b;box-shadow:0 2px 6px #183d2920}
+.zhejiang-province .region-city-marker[aria-pressed=true] .geo-marker-label{background:#244d2d;color:#fffde8;border-color:#244d2d}
+.city-label-stem{position:absolute;left:6px;top:6px;height:1px;background:#466647;transform-origin:0 50%;pointer-events:none}
+
+.hangzhou-atlas{background:#f1ede3}
+.hangzhou-map-heading{position:absolute;left:27px;top:28px;pointer-events:none;color:#29483b}
+.hangzhou-map-heading span{font:9px/1.4 system-ui;letter-spacing:2.2px}
+.hangzhou-map-heading strong{display:block;font:500 38px/1.45 "Noto Serif SC",serif;letter-spacing:5px;margin-top:6px}
+.hangzhou-map-heading p{font:12px/1.6 serif;letter-spacing:3px;margin:0;color:#78806c}
+.hangzhou-leaders{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:hidden}
+.hangzhou-leaders polyline{fill:none;stroke:#7e805e9e;stroke-width:1;vector-effect:non-scaling-stroke}
+.hangzhou-leaders circle{fill:#b17544;stroke:#fff9e9;stroke-width:1}
+.hangzhou-leaders polyline.is-selected{stroke:#b46d3d;stroke-width:1.5}
+.hangzhou-landmark-label,.hangzhou-signature-label{position:absolute;transform:translate(-50%,-50%);pointer-events:auto;white-space:nowrap;padding:4px 7px;border:1px solid #84927060;background:#fffdf1eb;border-radius:2px;color:#254b38;font:500 11px/1.4 system-ui;box-shadow:0 2px 4px #354c2912;cursor:pointer}
+.hangzhou-landmark-label:hover,.hangzhou-landmark-label[aria-pressed=true],.hangzhou-signature-label:hover,.hangzhou-signature-label[aria-pressed=true]{background:#2d5a3d;color:#fffbea;border-color:#2d5a3d;z-index:3}
+.hangzhou-landmark-label:focus-visible,.hangzhou-signature-label:focus-visible{outline:2px solid #bd774c;outline-offset:3px}
+.hangzhou-atlas .region-credit{bottom:14px;font-size:9px}
+.geo-card-note{display:block;padding-top:12px;border-top:1px solid #72836b30;color:#65735e;font:11px/1.6 system-ui}
+
+/* Airports are civic infrastructure, separate from scenic-place numbering. */
+.airport-section{margin-top:23px}.airport-row .place-title small{font-size:17px;color:#316c79}.airport-source-link{display:inline-block;margin-top:12px;color:#326879;font-size:11px;text-decoration:underline;text-underline-offset:3px}.airport-external{font-size:12px;line-height:1.8;color:#596758}
+
+.signature-section summary{cursor:pointer;list-style:none;padding:12px 0;border-bottom:1px solid #84927035}.signature-section[open] summary{margin-bottom:8px}.hangzhou-signature-label{font-size:10px;background:#f4f5edeb}

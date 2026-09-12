@@ -1,0 +1,88 @@
+{
+  "checks": [
+    {
+      "name": "published-copy-hangzhou-render",
+      "pass": true,
+      "detail": {
+        "ready": true,
+        "cache": true,
+        "key": "9ded619e170d2029e39fe62f08f25f846af9eb9164c8457eb94a29a194149ebb",
+        "count": 3380
+      }
+    },
+    {
+      "name": "independent-westlake",
+      "pass": true
+    },
+    {
+      "name": "starter-actual-wuhan",
+      "pass": true,
+      "detail": {
+        "ready": true,
+        "config": "wuhan-example"
+      }
+    },
+    {
+      "name": "boundary-attribution",
+      "pass": true
+    },
+    {
+      "name": "starter-nearby-buildings",
+      "pass": true,
+      "detail": {
+        "features": 212,
+        "triangles": 56542,
+        "errors": 0,
+        "requests": 0
+      }
+    },
+    {
+      "name": "landmark-click",
+      "pass": true
+    },
+    {
+      "name": "labels-toggle",
+      "pass": true
+    },
+    {
+      "name": "starter-release",
+      "pass": true
+    },
+    {
+      "name": "starter-bfcache-restore",
+      "pass": true
+    },
+    {
+      "name": "asset-gallery",
+      "pass": true,
+      "detail": {
+        "ready": true,
+        "destroyed": false,
+        "state": "ready",
+        "entries": 16,
+        "visible": 16,
+        "family": "all",
+        "selectedId": "residential-slab",
+        "kitVersion": "1.7.0",
+        "errors": [],
+        "kitFingerprint": "cfe2bf64d83f2879043118232c6d99722a8faad607c71cd504e3308fe6234106",
+        "sourceGeometries": 17,
+        "sharedGeometry": true,
+        "generatedThumbnails": false,
+        "familyCounts": {
+          "buildings": 12,
+          "trees": 2,
+          "roads": 2
+        }
+      }
+    },
+    {
+      "name": "no-browser-errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "networkFailures": [],
+  "passed": true
+}

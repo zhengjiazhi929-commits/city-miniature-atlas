@@ -1,0 +1,57 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import os from 'node:os';
+import {fileURLToPath} from 'node:url';
+import {createHash} from 'node:crypto';
+import {createCity} from './create-city.mjs';
+import {validateCityStarterConfig,resolveCityDataUrl} from '../src/city-starter-config.js';
+import {prepareCustomRegionBoundary} from '../src/region-boundaries.js';
+
+const root=fileURLToPath(new URL('../',import.meta.url));
+const config=JSON.parse(await fs.readFile(path.join(root,'data/cities/wuhan-example.json'),'utf8'));
+const bytes=await fs.readFile(path.resolve(root,config.boundary.path)),boundary=JSON.parse(bytes);
+assert.equal(createHash('sha256').update(bytes).digest('hex'),config.boundary.sha256);
+assert.equal(validateCityStarterConfig(config,boundary),config);
+const prepared=prepareCustomRegionBoundary(boundary,{city:config,source:config.boundary.source});
+assert.notEqual(prepared.geometry,boundary.geometry,'Caller geometry must not become mutable viewer state');
+assert.deepEqual(prepared.geometry,boundary.geometry,'Custom boundary must preserve all source coordinates');
+assert.equal(prepared.properties.source.url,config.boundary.source.url);
+const badConfig=structuredClone(config);badConfig.coordinates=[0,0];
+assert.throws(()=>validateCityStarterConfig(badConfig,boundary),/不匹配/);
+const badPlace=structuredClone(config);badPlace.landmarks[0].coordinates=[0,0];
+assert.throws(()=>validateCityStarterConfig(badPlace,boundary),/outside/);
+const unsafe=structuredClone(config);unsafe.boundary.source.url='javascript:alert(1)';
+assert.throws(()=>validateCityStarterConfig(unsafe),/source/);
+assert.throws(()=>resolveCityDataUrl('./data/../src/config.json','https://atlas.example/'),/inside/);
+assert.throws(()=>resolveCityDataUrl('./data/%2f..%2fsrc/config.json','https://atlas.example/'),/plain/);
+assert.throws(()=>resolveCityDataUrl('https://elsewhere.example/config.json','https://atlas.example/'),/plain/);
+assert.throws(()=>prepareCustomRegionBoundary({type:'FeatureCollection',features:[boundary]},{city:config,source:config.boundary.source}),/行政边界面/);
+const unclosed=structuredClone(boundary);const ring=unclosed.geometry.type==='Polygon'?unclosed.geometry.coordinates[0]:unclosed.geometry.coordinates[0][0];ring.pop();
+assert.throws(()=>prepareCustomRegionBoundary(unclosed,{city:config,source:config.boundary.source}),/闭合/);
+const degenerate={type:'Feature',properties:{},geometry:{type:'Polygon',coordinates:[[[1,1],[2,2],[3,3],[1,1]]]}};
+assert.throws(()=>prepareCustomRegionBoundary(degenerate,{city:{coordinates:[2,2]},source:config.boundary.source}),/zero-area/);
+const crossesDateLine={type:'Feature',properties:{},geometry:{type:'Polygon',coordinates:[[[179,0],[-179,0],[-179,1],[179,1],[179,0]]]}};
+assert.throws(()=>prepareCustomRegionBoundary(crossesDateLine,{city:{coordinates:[179,.5]},source:config.boundary.source}),/antimeridian/);
+const aborted=new AbortController();aborted.abort();
+assert.throws(()=>prepareCustomRegionBoundary(boundary,{city:config,source:config.boundary.source,signal:aborted.signal}),{name:'AbortError'});
+
+const tmp=await fs.mkdtemp(path.join(os.tmpdir(),'city-starter-test-'));
+try{
+  const args=['--id','wuhan-copy','--name','武汉','--name-en','Wuhan','--lon','114.305','--lat','30.593','--boundary',path.join(root,'data/regions/wuhan.geojson'),'--source',config.boundary.source.url,'--license','ODbL-1.0','--attribution','© OpenStreetMap contributors'];
+  const result=await createCity(args,{outputRoot:tmp});
+  assert.equal(result.url,'/examples/city-starter/?city=wuhan-copy');
+  assert.deepEqual(await fs.readFile(result.boundaryPath),bytes,'CLI must preserve source bytes');
+  const generated=JSON.parse(await fs.readFile(result.configPath,'utf8'));
+  validateCityStarterConfig(generated,JSON.parse(await fs.readFile(result.boundaryPath,'utf8')));
+  assert.deepEqual(generated.landmarks,[],'No fabricated attraction points');
+  assert.equal(generated.airports.status,'unverified','No fabricated airport coverage');
+  await assert.rejects(()=>createCity(args,{outputRoot:tmp}),/overwrite/);
+  const rename=[...args];rename[rename.indexOf('--name')+1]='另一个城市';rename[rename.indexOf('--name-en')+1]='Another City';
+  await assert.rejects(()=>createCity(rename,{outputRoot:tmp}),/does not match/);
+  const traversal=[...args];traversal[1]='../../escape';
+  await assert.rejects(()=>createCity(traversal,{outputRoot:tmp}),/slug/);
+  const outside=[...args];outside[outside.indexOf('--lon')+1]='0';outside[outside.indexOf('--lat')+1]='0';
+  await assert.rejects(()=>createCity(outside,{outputRoot:tmp}),/不匹配/);
+}finally{await fs.rm(tmp,{recursive:true,force:true});}
+console.log('City starter checks passed: source-byte preservation, runnable config generation, containment, closed rings, attribution, cancellation, unsafe paths and overwrite protection. Browser and network rendering require separate review.');

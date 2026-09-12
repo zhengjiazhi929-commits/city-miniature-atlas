@@ -1,0 +1,29 @@
+[
+  {
+    "package": "@mapbox/vector-tile",
+    "version": "2.0.4",
+    "file": "vector-tile.js",
+    "source": "https://unpkg.com/@mapbox/vector-tile@2.0.4/index.js",
+    "license": "VECTOR-TILE-LICENSE.txt",
+    "sha256": "f0cd3c2390cca8517def24f39464c47aba89bde0c8fa282f8ab5739db1fb90a8",
+    "modification": "Local relative import for point-geometry"
+  },
+  {
+    "package": "pbf",
+    "version": "4.0.1",
+    "file": "pbf.js",
+    "source": "https://unpkg.com/pbf@4.0.1/index.js",
+    "license": "PBF-LICENSE.txt",
+    "sha256": "2ed4c1b4184b61946771788c6c6691bf4e683b751f9d9189236e3e5b7ac329fd",
+    "modification": null
+  },
+  {
+    "package": "@mapbox/point-geometry",
+    "version": "1.1.0",
+    "file": "point-geometry.js",
+    "source": "https://unpkg.com/@mapbox/point-geometry@1.1.0/index.js",
+    "license": "POINT-GEOMETRY-LICENSE.txt",
+    "sha256": "eabf937b8397f00ee379cbcb7ed7083fc9e088fb7ca634758fc1c376af91780a",
+    "modification": null
+  }
+]

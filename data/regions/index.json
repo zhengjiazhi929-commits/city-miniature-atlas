@@ -1,0 +1,194 @@
+{
+  "version": 1,
+  "coordinateSystem": "WGS84 longitude, latitude (RFC 7946 / OGC:CRS84)",
+  "license": "ODbL-1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "attributionUrl": "https://www.openstreetmap.org/copyright",
+  "boundaryRole": "administrative-extent",
+  "regions": [
+    {
+      "id": "hong-kong",
+      "name": "香港",
+      "fullName": "香港特别行政区",
+      "nameEn": "Hong Kong",
+      "level": "province",
+      "parentId": "china",
+      "bounds": [
+        [
+          113.8171111,
+          22.1367222
+        ],
+        [
+          114.5024444,
+          22.5683333
+        ]
+      ],
+      "center": [
+        114.15977775,
+        22.35252775
+      ],
+      "centerMethod": "bounding-box midpoint; camera framing only",
+      "interiorPoint": [
+        114.18577775,
+        22.3492361
+      ],
+      "boundaryRole": "administrative-extent",
+      "attribution": "© OpenStreetMap contributors",
+      "license": "ODbL-1.0",
+      "source": {
+        "provider": "OpenStreetMap",
+        "osmType": "relation",
+        "osmId": 913110,
+        "url": "https://www.openstreetmap.org/relation/913110",
+        "retrievedAt": "2026-09-08T10:09:30.609214+00:00"
+      },
+      "geometryCounts": {
+        "coordinates": 1718,
+        "components": 13,
+        "holes": 22
+      },
+      "simplificationToleranceDegrees": 0,
+      "path": "./data/regions/hong-kong.geojson",
+      "bytes": 43502,
+      "sha256": "fc9243e76df4465ad2d6b48ae484c0ed7be01306fe996b40317aca35e2a133e2"
+    },
+    {
+      "id": "zhejiang",
+      "name": "浙江",
+      "fullName": "浙江省",
+      "nameEn": "Zhejiang",
+      "level": "province",
+      "parentId": "china",
+      "bounds": [
+        [
+          118.022407,
+          27.0449372
+        ],
+        [
+          123.3936224,
+          31.1825784
+        ]
+      ],
+      "center": [
+        120.7080147,
+        29.113757800000002
+      ],
+      "centerMethod": "bounding-box midpoint; camera framing only",
+      "interiorPoint": [
+        120.3440575351502,
+        29.114539299999997
+      ],
+      "boundaryRole": "administrative-extent",
+      "attribution": "© OpenStreetMap contributors",
+      "license": "ODbL-1.0",
+      "source": {
+        "provider": "OpenStreetMap",
+        "osmType": "relation",
+        "osmId": 553302,
+        "url": "https://www.openstreetmap.org/relation/553302",
+        "retrievedAt": "2026-09-08T10:09:35.706230+00:00"
+      },
+      "geometryCounts": {
+        "coordinates": 4534,
+        "components": 1,
+        "holes": 1
+      },
+      "simplificationToleranceDegrees": 0.0006,
+      "path": "./data/regions/zhejiang.geojson",
+      "bytes": 113180,
+      "sha256": "e84da7ebf3864e1350b8a2f06996456ed58d9295c791fad4cb608fd9e1666a2f"
+    },
+    {
+      "id": "hangzhou",
+      "name": "杭州",
+      "fullName": "杭州市",
+      "nameEn": "Hangzhou",
+      "level": "city",
+      "parentId": "zhejiang",
+      "bounds": [
+        [
+          118.3396948,
+          29.1888286
+        ],
+        [
+          120.7254851,
+          30.5648514
+        ]
+      ],
+      "center": [
+        119.53258995,
+        29.87684
+      ],
+      "centerMethod": "bounding-box midpoint; camera framing only",
+      "interiorPoint": [
+        119.47626260473584,
+        29.877230599999997
+      ],
+      "boundaryRole": "administrative-extent",
+      "attribution": "© OpenStreetMap contributors",
+      "license": "ODbL-1.0",
+      "source": {
+        "provider": "OpenStreetMap",
+        "osmType": "relation",
+        "osmId": 3221112,
+        "url": "https://www.openstreetmap.org/relation/3221112",
+        "retrievedAt": "2026-09-08T10:09:40.984635+00:00"
+      },
+      "geometryCounts": {
+        "coordinates": 3569,
+        "components": 1,
+        "holes": 0
+      },
+      "simplificationToleranceDegrees": 0.0005,
+      "path": "./data/regions/hangzhou.geojson",
+      "bytes": 89323,
+      "sha256": "7af19a52e437136080031eec48c7274bb379a83b230021a2db4b3300ad3479a3"
+    },
+    {
+      "id": "wuhan",
+      "name": "武汉",
+      "fullName": "武汉市",
+      "nameEn": "Wuhan",
+      "level": "city",
+      "parentId": "hubei",
+      "bounds": [
+        [
+          113.696653,
+          29.9728728
+        ],
+        [
+          115.076933,
+          31.362241
+        ]
+      ],
+      "center": [
+        114.386793,
+        30.6675569
+      ],
+      "centerMethod": "bounding-box midpoint; camera framing only",
+      "interiorPoint": [
+        114.37132313224254,
+        30.66761065
+      ],
+      "boundaryRole": "administrative-extent",
+      "attribution": "© OpenStreetMap contributors",
+      "license": "ODbL-1.0",
+      "source": {
+        "provider": "OpenStreetMap",
+        "osmType": "relation",
+        "osmId": 3076268,
+        "url": "https://www.openstreetmap.org/relation/3076268",
+        "retrievedAt": "2026-09-08T10:09:44.805984+00:00"
+      },
+      "geometryCounts": {
+        "coordinates": 4978,
+        "components": 3,
+        "holes": 3
+      },
+      "simplificationToleranceDegrees": 0,
+      "path": "./data/regions/wuhan.geojson",
+      "bytes": 123461,
+      "sha256": "442ed9b67e43f0f29942963b2fd781812d6d7f66760dd266104d7eaf9d457124"
+    }
+  ]
+}

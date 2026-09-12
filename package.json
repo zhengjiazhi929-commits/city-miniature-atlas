@@ -1,0 +1,33 @@
+{
+  "name": "city-miniature-atlas",
+  "version": "0.0.2",
+  "private": true,
+  "type": "module",
+  "description": "Interactive geographic city dioramas: Hangzhou reference, reusable 3D assets and a bring-your-own-city starter.",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "start": "node scripts/serve.mjs",
+    "check": "node scripts/check.mjs",
+    "check:hangzhou": "node scripts/check-hangzhou-atlas.mjs",
+    "check:hangzhou-details": "node scripts/check-hangzhou-details.mjs",
+    "check:hangzhou-subjects": "python3 scripts/check-hangzhou-subjects.py",
+    "bake:hangzhou-fabric": "node scripts/bake-hangzhou-fabric.mjs",
+    "build:city-assets": "node scripts/build-city-assets.mjs",
+    "check:city-assets": "node scripts/check-city-assets.mjs",
+    "build:hangzhou-envelopes": "python3 scripts/build-hangzhou-display-envelopes.py",
+    "create:city": "node scripts/create-city.mjs",
+    "check:city-starter": "node scripts/check-city-starter.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhengjiazhi929-commits/city-miniature-atlas.git"
+  },
+  "homepage": "https://github.com/zhengjiazhi929-commits/city-miniature-atlas#readme",
+  "bugs": {
+    "url": "https://github.com/zhengjiazhi929-commits/city-miniature-atlas/issues"
+  }
+}
