@@ -13,3 +13,6 @@ jobs:
       - run: npm run check
       - run: npm run check:city-assets
       - run: npm run check:city-starter
+      - run: npm run check:city-sources
+      - run: npm run check:city-plan
+      - run: npm run check:city-workflow

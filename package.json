@@ -1,6 +1,6 @@
 {
   "name": "city-miniature-atlas",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": true,
   "type": "module",
   "description": "Interactive geographic city dioramas: Hangzhou reference, reusable 3D assets and a bring-your-own-city starter.",
@@ -17,7 +17,11 @@
     "check:city-assets": "node scripts/check-city-assets.mjs",
     "build:hangzhou-envelopes": "python3 scripts/build-hangzhou-display-envelopes.py",
     "create:city": "node scripts/create-city.mjs",
-    "check:city-starter": "node scripts/check-city-starter.mjs"
+    "check:city-starter": "node scripts/check-city-starter.mjs",
+    "city:workflow": "node scripts/city-workflow.mjs",
+    "check:city-sources": "node scripts/check-city-sources.mjs",
+    "check:city-plan": "node scripts/check-city-build-plan.mjs",
+    "check:city-workflow": "node scripts/check-city-workflow.mjs"
   },
   "engines": {
     "node": ">=18"

@@ -1,0 +1,15 @@
+# Wuhan city workflow sample
+
+**黄鹤楼周边数据样例，非武汉全市覆盖。** The administrative extent is the existing full Wuhan municipal boundary in `data/regions/wuhan.geojson`. The urban source covers one compact selection box near Yellow Crane Tower, `[114.29, 30.535, 114.315, 30.555]` in WGS84 longitude/latitude order. Coordinates are not shifted into GCJ-02.
+
+`wuhan-yellow-crane-overpass.json` is the **unaltered response body** of one successful public Overpass GET. `wuhan-yellow-crane-acquisition.json` records the exact URL/query, UTC acquisition time, OSM source timestamp, byte count and SHA-256. Its embedded attribution/license is © OpenStreetMap contributors / ODbL-1.0. See [OSM copyright and license](https://www.openstreetmap.org/copyright). Code licensing does not replace OSM database licensing.
+
+The public-service policy was checked against the [Overpass operator's Commons documentation](https://dev.overpass-api.de/overpass-doc/en/preface/commons.html). This was one manual, bounded acquisition, using a 20-second query timeout and 8 MiB server memory declaration; the client response was capped at 4.5 MiB. No automatic retry, endpoint rotation, or production browser dependency is used.
+
+The query selects mapped highway/building/water/waterway/park/landuse ways and building/park multipolygon relations intersecting the box. Full selected geometries can extend beyond the box. This is not a complete inventory of all OSM feature types; missing/outside features are **unknown, not vacant land**. Roads and buildings are source-backed footprints and centerlines; the derived 3D scene remains a schematic miniature, not a surveyed digital twin. Heights absent from OSM require explicitly marked display estimates in downstream compilation.
+
+The snapshot contains 1,440 source elements (1,103,694 bytes). The current conservative adapter produces 1,439 features: 568 building, 730 transportation, 5 water, 14 park and 122 landuse. Relation `15407236` is reconstructed from connected outer rings with its correctly assigned inner hole. Incomplete or ambiguous relations are skipped with explicit warnings; no replacement polygon is fabricated. These counts describe this acquisition and parser version, not citywide coverage.
+
+The yellow-crane landmark/focus in `examples/city-workflow/wuhan.json` is derived from the actual [OSM building footprint, way 81641900](https://www.openstreetmap.org/way/81641900), as a bounding-box midpoint. This corrects the older example's representative anchor `[114.3027, 30.5446]`, which was not the building footprint's position. The source records an OSM building height of 51.4 m and 5 levels; these are source tags, not independent survey verification.
+
+Reproduction is offline by default: the workflow reads the checked-in raw snapshot and verifies its expected hash. `collectCitySources` can freeze a fresh byte-identical copy and provenance into a new/empty output directory. Re-acquisition is a separate explicit network option; it must not silently replace this pinned snapshot.

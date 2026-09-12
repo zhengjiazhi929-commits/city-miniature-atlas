@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.3 — Codex city-production workflow
+
+- Added repository-local build-city skill, persistent run state, raw source acquisition, generic City Kit planning, bounded repair, real browser capture and hash-bound visual review.
+- Added a sourced Wuhan / Yellow Crane Tower neighbourhood fixture; scope is explicitly partial, with current OSM footprint-based landmark coordinates.
+- Preserved the Hangzhou runtime, assets and cached visual baseline; no model API service or website deployment is introduced.
+
 ## 0.0.2 — Initial GitHub source distribution
 
 - Hangzhou reference city and existing independent attraction subjects.

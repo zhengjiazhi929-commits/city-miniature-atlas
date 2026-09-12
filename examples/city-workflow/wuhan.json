@@ -1,0 +1,70 @@
+{
+  "schema": "city-task-v1",
+  "city": {
+    "id": "wuhan",
+    "name": "武汉",
+    "nameEn": "Wuhan",
+    "coordinates": [
+      114.305,
+      30.593
+    ]
+  },
+  "boundary": {
+    "path": "./data/regions/wuhan.geojson",
+    "sha256": "442ed9b67e43f0f29942963b2fd781812d6d7f66760dd266104d7eaf9d457124",
+    "source": {
+      "url": "https://www.openstreetmap.org/relation/3076268",
+      "license": "ODbL-1.0",
+      "attribution": "© OpenStreetMap contributors"
+    }
+  },
+  "sources": [
+    {
+      "id": "wuhan-yellow-crane",
+      "kind": "overpass",
+      "path": "./data/city-workflow-samples/wuhan-yellow-crane-overpass.json",
+      "sha256": "1b0dcfa62a557a65ff359cf00f20ca6c3de2af38021d6535768f7e13c34a826a",
+      "source": {
+        "url": "https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%5Bmaxsize%3A8388608%5D%3B(way%5Bhighway%5D(30.535%2C114.29%2C30.555%2C114.315)%3Bway%5Bbuilding%5D(30.535%2C114.29%2C30.555%2C114.315)%3Bway%5Bnatural%3Dwater%5D(30.535%2C114.29%2C30.555%2C114.315)%3Bway%5Bwaterway%5D(30.535%2C114.29%2C30.555%2C114.315)%3Bway%5Bleisure%3Dpark%5D(30.535%2C114.29%2C30.555%2C114.315)%3Bway%5Blanduse%5D(30.535%2C114.29%2C30.555%2C114.315)%3Brelation%5Bbuilding%5D(30.535%2C114.29%2C30.555%2C114.315)%3Brelation%5Bleisure%3Dpark%5D(30.535%2C114.29%2C30.555%2C114.315)%3B)%3Bout%20geom%3B",
+        "license": "ODbL-1.0",
+        "attribution": "© OpenStreetMap contributors"
+      },
+      "coverage": {
+        "status": "partial",
+        "bbox": [
+          114.29,
+          30.535,
+          114.315,
+          30.555
+        ],
+        "coordinateReference": "WGS84 longitude latitude",
+        "label": "黄鹤楼周边数据样例，非武汉全市覆盖",
+        "note": "Bounding box selects intersecting OSM elements; complete feature geometries can extend beyond this box. Missing features and places outside source coverage are unknown, not vacant land."
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "yellow-crane",
+      "name": "黄鹤楼",
+      "coordinates": [
+        114.2970471,
+        30.5470776
+      ],
+      "sourceUrl": "https://www.openstreetmap.org/way/81641900",
+      "sourceId": "way/81641900",
+      "description": "黄鹤楼定位点取自本次 OSM 建筑轮廓的包围盒中心，仅用于标注与相机聚焦；专属建筑模型尚未制作，保留原始位置与轮廓，不生成普通建筑替身。",
+      "coordinateMethod": "bounding-box midpoint of OSM way/81641900 footprint"
+    }
+  ],
+  "display": {
+    "title": "武汉 · 黄鹤楼周边",
+    "focus": [
+      114.2970471,
+      30.5470776
+    ],
+    "focusDistanceMeters": 3500,
+    "coverageLabel": "黄鹤楼周边数据样例，非武汉全市覆盖",
+    "coverageNotice": "采用武汉全市行政边界；道路、建筑、水域、公园仅展示黄鹤楼周边样例。未覆盖位置未知，不代表空地。"
+  }
+}

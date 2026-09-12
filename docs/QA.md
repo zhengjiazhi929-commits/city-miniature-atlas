@@ -1,4 +1,25 @@
-# Public source verification — 0.0.2
+# Public source verification
+
+## Codex workflow — 0.0.3
+
+Checked 2026-09-13 on the feature source, Node.js 24.19.0 and desktop Chrome (1600 × 1000).
+The Hangzhou source/data/assets/cache are unchanged from the public 0.0.2 baseline.
+
+- Source acquisition: 48 groups covering the real OSM sample, frozen bytes/hashes, geometry, unsafe relation rejection, paths/symlinks, network limits, timeout and cancellation.
+- Generic builder: real-source footprint containment and holes, road/water exclusions, deterministic planting, exact landmark source IDs, bounded repairs, and 2,000-feature processing.
+- Workflow: resume/checkpoint recovery, source snapshots, locks, code/asset invalidation, stale review rejection, failed-capture invalidation, finite/count checks, empty-building rejection, bounded repair and cancellation.
+- Existing package, City Kit, city-starter and Hangzhou independent-detail checks passed. These checks did not rebuild their assets.
+- Actual preview rendered **559 ordinary buildings, 126 roads, 5 water polygons, 49 green polygons and 988 trees**. One steep-support building was skipped with its source ID; support diagnostics reported zero violations. Three screenshots and a pagehide release check completed without page errors or failed requests.
+- Ten additional actual browser interaction checks passed: labels, landmark location/description, full extent/source focus, source attribution, release, simulated persisted-page restoration, intentional failed load and successful retry.
+- Repository skill format validation passed; an independent Codex skill trial reached `awaiting_visual_review` and resumed without rebuilding. That trial intentionally did not claim browser or visual acceptance.
+
+**City visual result: needs revision.** The complete Wuhan boundary is shown, but the supplied OSM extract is only a small neighbourhood. It lacks full river/urban coverage and a bespoke Yellow Crane Tower model. The actual visual report records those gaps and the run remains `needs_revision`; this is a working-tool demonstration, not a completed Wuhan city or an accepted replacement for Hangzhou.
+
+[Runtime and actual review](qa/city-workflow-runtime.json) · [Browser interaction checks](qa/city-workflow-browser.json) · [Default capture](media/city-workflow/default.png) · [Full extent](media/city-workflow/full.png) · [Landmark location](media/city-workflow/landmark.png)
+
+The protocol test's synthetic PNGs are labelled fixtures for state/hash testing and are not counted as actual screenshots. Runtime diagnostics cannot prove engineering-grade collision freedom, visual correctness, complete coverage or user acceptance. Remote DEM availability remains an external dependency.
+
+## Earlier public distribution — 0.0.2
 
 Checked 2026-09-13 from the curated source checkout. Runtime checks used desktop Chrome, WebGL 2 and a 1600 × 1050 viewport. Screenshots are actual browser renders.
 

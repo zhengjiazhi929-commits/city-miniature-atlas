@@ -33,6 +33,24 @@ not a required installation step. Changed asset/source hashes require a new
 derived city cache. Keep a clean commit before rebuilding. Existing data files
 and their recorded hashes remain the reference until a rebuild is requested.
 
+## Codex city-production tools
+
+Use Node.js 18.17+ (22 recommended). The [workflow guide](../docs/city-workflow.md)
+documents source acquisition, generic planning, bounded repair, persisted state,
+actual capture and visual review. No model API service is launched by these tools.
+
+```sh
+node scripts/city-workflow.mjs help
+node scripts/check-city-sources.mjs
+node scripts/check-city-build-plan.mjs
+node scripts/check-city-workflow.mjs
+```
+
+The protocol check uses clearly identified synthetic test fixtures for status and
+hash handling; it does not count as browser or visual evidence. Actual `capture`
+needs optional Playwright and Chrome. Source parsing and building work with the
+bundled Wuhan extract without network calls; viewing its DEM requires network.
+
 ## Optional Python GIS tools
 
 Use your own Python 3.10+ environment (the original preparation used 3.12).
