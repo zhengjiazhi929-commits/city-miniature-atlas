@@ -26,12 +26,31 @@ The generic viewer handles a bounded region, terrain, vector data, orbit control
 
 The starter does **not** automatically reproduce Hangzhou's detailed composition. Hangzhou has dedicated land-use processing, display parameters, skyline models and precompiled geometry. Read [the integration guide](add-a-city.md) for the basic-map path and the detailed-diorama path. Unknown source coverage or missing building heights must not be presented as surveyed facts.
 
+## Codex-driven city production
+
+Open this repository in Codex and use `$build-city` to research and build another city. The workflow freezes source bytes, constructs a generic City Kit plan, runs bounded geometric repairs, captures the actual browser, and records Codex visual review. It resumes local jobs and rejects stale capture/review evidence. It does not embed an LLM service or require a model API key.
+
+Use Node.js 18.17+ (22 recommended) for this workflow:
+
+```sh
+node scripts/city-workflow.mjs init --id wuhan-demo --brief examples/city-workflow/wuhan.json
+node scripts/city-workflow.mjs run --id wuhan-demo
+npm start
+```
+
+Open `/examples/city-workflow/?run=wuhan-demo`. The included real OSM extract covers only the Yellow Crane Tower neighbourhood. Unknown areas stay explicit; bespoke landmarks are not replaced with ordinary towers. This is a pipeline demonstration, not a complete or visually accepted Wuhan city model. Online measured DEM and optional Playwright/Chrome capture have separate network/dependency requirements.
+
+See the [workflow guide](city-workflow.md), [repository skill](../.agents/skills/build-city/SKILL.md) and [source notice](../data/city-workflow-samples/NOTICE.md).
+
 ## Checks
 
 ```sh
 npm run check
 npm run check:city-assets
 npm run check:city-starter
+npm run check:city-sources
+npm run check:city-plan
+npm run check:city-workflow
 ```
 
 See [the build tools](../scripts/README.md) for optional dependencies and required raw archives. Source-changing rebuilds must also refresh the matching city cache.

@@ -5,7 +5,7 @@ The root MIT license applies to original application code and original City Kit 
 | Material | License / attribution | Local record |
 | --- | --- | --- |
 | Original application code, procedural model code and City Kit geometry | MIT, Copyright © 2026 Zhengjiazhi | [LICENSE](LICENSE), [City Kit](assets/city-kit/README.md) |
-| OpenStreetMap data and derived regional, airport, city and landmark datasets | © OpenStreetMap contributors, ODbL 1.0 | [Regional data](data/regions/DATA_LICENSE.md), [Hangzhou](data/hangzhou-atlas/NOTICE.md), [airports](data/airports/NOTICE.md), [Leifeng](data/scenes/leifeng/NOTICE.md), [West Lake](data/scenes/westlake/NOTICE.md) |
+| OpenStreetMap data and derived regional, airport, city and landmark datasets | © OpenStreetMap contributors, ODbL 1.0 | [Regional data](data/regions/DATA_LICENSE.md), [Hangzhou](data/hangzhou-atlas/NOTICE.md), [airports](data/airports/NOTICE.md), [Wuhan workflow extract](data/city-workflow-samples/NOTICE.md), [Leifeng](data/scenes/leifeng/NOTICE.md), [West Lake](data/scenes/westlake/NOTICE.md) |
 | geoBoundaries / HDX China ADM2 snapshot | CC BY 3.0 IGO; geoBoundaries / HDX, China administrative boundaries (2020) | [Prefecture attribution and processing](data/regions/prefectures/README.md), adjacent provenance.json |
 | Natural Earth geographic selection outlines | Public domain; Natural Earth | [Map sources and modifications](docs/map-data.md), data/data-provenance.json |
 | Mapzen / AWS terrain tiles and derived DEM | Source-specific terms and attribution; includes USGS GMTED2010 / SRTM and NOAA ETOPO1 | [Terrain sources](docs/geographic-data.md), data/hangzhou-atlas/scene-data.json source metadata, [AWS registry](https://registry.opendata.aws/terrain-tiles/) |

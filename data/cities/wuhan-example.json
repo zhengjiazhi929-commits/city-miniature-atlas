@@ -18,9 +18,9 @@
     {
       "id": "yellow-crane",
       "name": "黄鹤楼",
-      "coordinates": [114.3027, 30.5446],
-      "sourceUrl": "https://www.openstreetmap.org/?mlat=30.5446&mlon=114.3027#map=17/30.5446/114.3027",
-      "description": "沿用应用已收录的黄鹤楼代表点，用于验证真实城市边界内的景点定位。本示例仅显示位置标注，不加载独立建筑模型。"
+      "coordinates": [114.2970471, 30.5470776],
+      "sourceUrl": "https://www.openstreetmap.org/way/81641900",
+      "description": "根据归档 OSM 黄鹤楼建筑足迹定位，用于验证真实城市边界内的景点选择。本示例只展示位置标注，不加载独立建筑模型。"
     }
   ]
 }

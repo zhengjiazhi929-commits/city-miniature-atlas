@@ -1,0 +1,60 @@
+{
+  "checkedAt": "2026-09-12T20:00:08.998Z",
+  "checks": [
+    {
+      "name": "actual-planned-render",
+      "pass": true,
+      "detail": {
+        "buildings": 559,
+        "trees": 988,
+        "roads": 126
+      }
+    },
+    {
+      "name": "labels-toggle",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "landmark-location-not-fabricated-model",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "extent-and-source-focus",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "visible-source-coverage-and-attribution",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "owned-viewer-release",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "simulated-persisted-page-rebuild",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "failed-plan-shows-retry-without-canvas",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "retry-loads-current-plan",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "no-uncaught-browser-errors",
+      "pass": true,
+      "detail": {}
+    }
+  ],
+  "limits": "Actual desktop Chrome interaction sample, not a universal browser/GPU acceptance or complete-city visual review."
+}

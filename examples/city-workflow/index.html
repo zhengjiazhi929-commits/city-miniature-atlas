@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>城市生成方案 · 山河入掌</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="importmap">{"imports":{"three":"../../vendor/three.module.js","three/addons/":"../../vendor/addons/"}}</script>
+  <script type="module" src="./main.js"></script>
+</head>
+<body>
+  <header><a href="../../">山河入掌 <span>城市工作流</span></a><a href="../../docs/city-workflow.md">生成说明 ↗</a></header>
+  <main>
+    <aside>
+      <p class="eyebrow">CITY / GENERATED PLAN</p>
+      <h1 id="city-name">读取城市方案…</h1>
+      <p id="subtitle">以真实位置组织建筑、道路、水域和树木；在真实高程上查看生成结果。</p>
+      <div class="counts" aria-label="实际绘制对象数量"><div><strong id="building-count">—</strong><span>栋建筑</span></div><div><strong id="road-count">—</strong><span>条道路</span></div><div><strong id="tree-count">—</strong><span>棵树</span></div></div>
+      <div class="controls"><button id="focus-view" disabled>进入资料覆盖区</button><button id="full-view" disabled>完整市域</button><button id="labels" disabled aria-pressed="true">地点标注</button></div>
+      <section class="coverage"><h2>本次资料覆盖</h2><p id="coverage-text">正在读取来源与范围…</p><p class="caveat">完整市域展示真实边界与地貌。建筑等要素仅在所提供资料的范围内生成；市域地形不代表整座城市已完成建模。</p><p id="landmark-notice" class="model-notice">独立景点模型尚未制作。景点仅显示位置标注，周边建筑采用通用风格模型。</p><div id="source-links"></div></section>
+      <section><h2>地点定位</h2><div id="places" class="places"></div><article id="place-detail" hidden><h3></h3><p></p><a target="_blank" rel="noopener">地点来源 ↗</a></article></section>
+      <details id="report"><summary>生成与支撑检查</summary><p id="support-report">等待地形支撑计算。</p><p id="layer-report"></p><ul id="issues"></ul></details>
+      <div class="provenance"><p id="plan-path"></p><p id="source-text"></p><a id="plan-download">查看方案 JSON ↗</a></div>
+    </aside>
+    <section class="stage" aria-label="数据驱动的城市三维预览"><div id="viewer"></div><div id="status" role="status">读取城市方案…</div><button id="retry" hidden>重新加载</button><div class="map-caption"><span id="view-label">资料覆盖区</span><span>拖动旋转 · 滚轮缩放 · 右键平移</span></div></section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,230 @@
+{
+  "schema": "city-workflow-qa-v1",
+  "scope": "Actual desktop Chrome pipeline demonstration. The visual city result requires revision; no completed Wuhan or user visual acceptance is claimed.",
+  "planSha256": "1b10045033f6739523bcd8a56695c19bacca13d653ce981acd5cb5b49b950791",
+  "captureSha256": "6b9d15b36c33011098eecea0db494c2d4321ef761f38b228aabc28533eef418a",
+  "runtime": {
+    "ok": true,
+    "errors": [],
+    "failedRequests": [],
+    "diagnostics": {
+      "ready": true,
+      "renderReady": true,
+      "state": "partial",
+      "destroyed": false,
+      "finite": true,
+      "counts": {
+        "buildings": 559,
+        "roads": 126,
+        "roadSegments": 2098,
+        "bridges": 4,
+        "bridgePiers": 90,
+        "water": 5,
+        "green": 49,
+        "trees": 988,
+        "landmarks": 1
+      },
+      "planned": {
+        "buildings": 560,
+        "roads": 126,
+        "water": 5,
+        "green": 49,
+        "trees": 988,
+        "landmarks": 1
+      },
+      "supportComputed": 560,
+      "supportViolations": 0,
+      "groundedBuildings": 559,
+      "supportSkirts": 559,
+      "maxSupportMeters": 2.6782356381481405,
+      "skipped": [
+        {
+          "kind": "building",
+          "id": "building:way/1388468454:0",
+          "sourceId": "way/1388468454",
+          "reason": "坡差 3.9 m 超出支撑阈值，需独立工程处理"
+        }
+      ],
+      "warnings": [
+        "建筑是共享风格资产，尺寸与位置来自方案；立面不代表实测建筑。",
+        "独立景点模型尚未制作；景点只显示屏幕位置标注。",
+        "1 个对象因数据或地形约束未绘制，详见 diagnostics.skipped。"
+      ],
+      "regionalTerrain": {
+        "kind": "city",
+        "heightScale": 1,
+        "gridCells": 256,
+        "style": "default",
+        "contourIntervalMeters": null,
+        "demZoom": 10,
+        "demTiles": 17,
+        "loadedTiles": 17,
+        "terrainTriangles": 53846,
+        "boundaryEdges": 6686,
+        "skippedDegenerateTriangles": 0,
+        "waterAdjustedVertices": 0,
+        "waterLevels": [
+          30.859163161208965,
+          39.47915642399195,
+          42.0857707182235,
+          28.98079053283029,
+          41.949069755293024
+        ],
+        "disposed": false,
+        "quality": {
+          "processedTiles": 17,
+          "changedPixels": 57,
+          "filterMs": 585.7999999821186,
+          "cacheHits": 0,
+          "fallbackTiles": 0,
+          "parentFetches": 0,
+          "parentCacheHits": 0,
+          "maximumParentLevelsUsed": 0,
+          "fallbackFailures": 0,
+          "cacheBytes": 0,
+          "cachedTiles": 0,
+          "inflightTiles": 0,
+          "worker": false,
+          "pendingWorkerTasks": 0,
+          "leases": 0,
+          "released": true,
+          "disposed": true,
+          "recentFallbacks": []
+        },
+        "retainedDemBytes": 4456448,
+        "grid": [
+          219,
+          256
+        ],
+        "vertices": 30266,
+        "minimumMeters": -65.76058969899779,
+        "maximumMeters": 719.6773598989706,
+        "baseY": -0.6670070976018906,
+        "surfaceCutout": true,
+        "renderedTerrainTriangles": 54026,
+        "surfaceCutoutSkippedDegenerateTriangles": 0
+      },
+      "coverage": [
+        {
+          "sourceId": "wuhan-yellow-crane",
+          "status": "partial",
+          "bbox": [
+            114.29,
+            30.535,
+            114.315,
+            30.555
+          ],
+          "coordinateReference": "WGS84 longitude latitude",
+          "label": "黄鹤楼周边数据样例，非武汉全市覆盖",
+          "note": "Bounding box selects intersecting OSM elements; complete feature geometries can extend beyond this box. Missing features and places outside source coverage are unknown, not vacant land."
+        }
+      ],
+      "waterSupport": [
+        {
+          "id": "water:way/105570361:0",
+          "sourceId": "way/105570361",
+          "levelMeters": 30.859163161208965,
+          "shorelineReliefMeters": 0.6584444662568387,
+          "samples": 47
+        },
+        {
+          "id": "water:way/1147351946:0",
+          "sourceId": "way/1147351946",
+          "levelMeters": 39.47915642399195,
+          "shorelineReliefMeters": 0.1267011359054493,
+          "samples": 20
+        },
+        {
+          "id": "water:way/140618639:0",
+          "sourceId": "way/140618639",
+          "levelMeters": 42.0857707182235,
+          "shorelineReliefMeters": 0.2054065342176017,
+          "samples": 41
+        },
+        {
+          "id": "water:way/1505401666:0",
+          "sourceId": "way/1505401666",
+          "levelMeters": 28.98079053283029,
+          "shorelineReliefMeters": 0.11514708801398399,
+          "samples": 47
+        },
+        {
+          "id": "water:way/633612798:0",
+          "sourceId": "way/633612798",
+          "levelMeters": 41.949069755293024,
+          "shorelineReliefMeters": 0.18303151566859555,
+          "samples": 21
+        }
+      ],
+      "waterElevationMethod": "Median shoreline elevation sampled from the displayed measured terrain; reject shoreline relief above 2 m.",
+      "kitVersion": "1.7.0",
+      "buildings": 559,
+      "roads": 126,
+      "roadSegments": 2098,
+      "bridges": 4,
+      "bridgePiers": 90,
+      "water": 5,
+      "green": 49,
+      "trees": 988,
+      "landmarks": 1,
+      "renderedObjects": 3920,
+      "view": {
+        "target": [
+          -2.222331751925761,
+          0.010633314943416242,
+          3.5382045549577392
+        ],
+        "distance": 0.9051750435876058
+      },
+      "activeLandmark": "focus",
+      "drawCalls": 36,
+      "triangles": 989843
+    }
+  },
+  "images": [
+    {
+      "pose": "default",
+      "path": "../media/city-workflow/default.png",
+      "sha256": "874ac8fef79e93154faf77b55d21a0e6431955a88375a4725f6ab9aba10e2cbc"
+    },
+    {
+      "pose": "full",
+      "path": "../media/city-workflow/full.png",
+      "sha256": "34a963e131f84703d28c3c5b833f7736d2e90d6f72f489fb25096fa4c91b557f"
+    },
+    {
+      "pose": "landmark",
+      "path": "../media/city-workflow/landmark.png",
+      "sha256": "dfb1872c365e8bf56594a4998b0dcda9b45970a0774674820eea39f7c3d97a23"
+    }
+  ],
+  "visualReview": {
+    "schema": "city-visual-review-v1",
+    "planSha256": "1b10045033f6739523bcd8a56695c19bacca13d653ce981acd5cb5b49b950791",
+    "captureSha256": "6b9d15b36c33011098eecea0db494c2d4321ef761f38b228aabc28533eef418a",
+    "verdict": "revise",
+    "summary": "实际默认、完整市域和地标视角已查看。工作流与实体渲染可运行，但该样例仍不能作为完成的武汉城市或黄鹤楼景区交付。保留明确数据缺口以验证返修流程。",
+    "findings": [
+      {
+        "code": "water-coverage-incomplete",
+        "severity": "error",
+        "message": "样例未覆盖长江等主要水体关系，桥梁延伸处下方缺少已提供水面。补充经核实的水系数据后再验收城市样貌，不能把未采集范围当成空地。"
+      },
+      {
+        "code": "landmark-model-required",
+        "severity": "warning",
+        "message": "黄鹤楼当前只有经核对的位置标注，专属建筑模型尚未制作；已去除普通玻璃楼替身。"
+      },
+      {
+        "code": "coverage-and-scale",
+        "severity": "warning",
+        "message": "部分街区资料稀疏，远景建筑体量和完整市域内容尚未达到杭州参考品质。"
+      },
+      {
+        "code": "support-skip",
+        "severity": "warning",
+        "message": "1 栋来源建筑因局部坡差超限跳过；实际显示559栋，支撑诊断0违规并非全场景工程碰撞证明。"
+      }
+    ]
+  }
+}

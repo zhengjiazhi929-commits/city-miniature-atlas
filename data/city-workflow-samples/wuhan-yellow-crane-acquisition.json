@@ -1,0 +1,20 @@
+{
+  "schema": "city-source-acquisition-v1",
+  "url": "https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A20%5D%5Bmaxsize%3A8388608%5D%3B(way%5Bhighway%5D(30.535%2C114.29%2C30.555%2C114.315)%3Bway%5Bbuilding%5D(30.535%2C114.29%2C30.555%2C114.315)%3Bway%5Bnatural%3Dwater%5D(30.535%2C114.29%2C30.555%2C114.315)%3Bway%5Bwaterway%5D(30.535%2C114.29%2C30.555%2C114.315)%3Bway%5Bleisure%3Dpark%5D(30.535%2C114.29%2C30.555%2C114.315)%3Bway%5Blanduse%5D(30.535%2C114.29%2C30.555%2C114.315)%3Brelation%5Bbuilding%5D(30.535%2C114.29%2C30.555%2C114.315)%3Brelation%5Bleisure%3Dpark%5D(30.535%2C114.29%2C30.555%2C114.315)%3B)%3Bout%20geom%3B",
+  "method": "GET",
+  "query": "[out:json][timeout:20][maxsize:8388608];(way[highway](30.535,114.29,30.555,114.315);way[building](30.535,114.29,30.555,114.315);way[natural=water](30.535,114.29,30.555,114.315);way[waterway](30.535,114.29,30.555,114.315);way[leisure=park](30.535,114.29,30.555,114.315);way[landuse](30.535,114.29,30.555,114.315);relation[building](30.535,114.29,30.555,114.315);relation[leisure=park](30.535,114.29,30.555,114.315););out geom;",
+  "bbox": [
+    114.29,
+    30.535,
+    114.315,
+    30.555
+  ],
+  "acquiredAt": "2026-09-12T19:08:01.650Z",
+  "completedAt": "2026-09-12T19:08:05.686Z",
+  "bytes": 1103694,
+  "sha256": "1b0dcfa62a557a65ff359cf00f20ca6c3de2af38021d6535768f7e13c34a826a",
+  "sourceTimestamp": "2026-09-12T19:06:06Z",
+  "attribution": "© OpenStreetMap contributors",
+  "license": "ODbL-1.0",
+  "policyUrl": "https://dev.overpass-api.de/overpass-doc/en/preface/commons.html"
+}

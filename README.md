@@ -37,7 +37,23 @@ npm start
 | 杭州示范 | 主城首屏、完整市域、楼群高低/配色、地标与独立景点 | 当地 DEM、道路、水系、用地、街区及标志建筑资料 |
 | 开发入口 | 可运行的城市示例、配置创建脚本、输入校验、接入指南 | 确认地理范围、来源许可和视觉效果 |
 
-**目前不是“输入城市名称就生成同等质量沙盘”的服务。** 新城市示例展示通用地貌和在线地图；杭州的成体系楼群与精细地标包含专用配置。两条路径的接口、数据清单及区别见[接入指南](docs/add-a-city.md)。
+**目前不是“输入城市名称就生成同等质量沙盘”的服务。** 城市接入示例展示基础在线地图；新的 Codex 工作流能用当地来源构建通用树楼路方案，但杭州的成体系楼群与精细地标仍包含专用配置。两条路径的接口、数据清单及区别见[接入指南](docs/add-a-city.md)。
+
+## 让 Codex 制作另一座城市
+
+仓库现在提供 **Codex 驱动的城市制作工作流**：资料冻结 → 通用建模 → 几何检查与有限修复 → 实际截图 → Codex 看图返修。任务可恢复，修改方案后旧截图不能继续验收。Codex 负责研究和视觉判断，网站没有内置大模型服务。
+
+建议使用 Node.js 22（工作流至少需要 18.17）。用 Codex 打开仓库并输入“使用 $build-city 制作指定城市”，或先跑随包的真实武汉局部样例：
+
+```sh
+node scripts/city-workflow.mjs init --id wuhan-demo --brief examples/city-workflow/wuhan.json
+node scripts/city-workflow.mjs run --id wuhan-demo
+npm start
+```
+
+打开 <http://127.0.0.1:4173/examples/city-workflow/?run=wuhan-demo>。样例只采集黄鹤楼周边，完整市界不代表全市建筑覆盖。通用构建复用 City Kit，保留来源占地、主路和水系；定制地标、当地覆盖补全与最终观感仍需继续制作和验收。
+
+[工作流与命令](docs/city-workflow.md) · [Codex 技能](.agents/skills/build-city/SKILL.md)
 
 ## 杭州示范
 
@@ -52,6 +68,8 @@ src/                    页面、地图、景点和可复用资产加载器
 assets/city-kit/        固定树楼几何、GLB 与资产说明
 data/                   随包地理资料、模型和来源记录
 examples/city-starter/  不依赖主应用目录的新城市接入示例
+examples/city-workflow/ 通用构建方案的独立预览
+.agents/skills/         Codex 可调用的城市制作技能
 scripts/                启动、校验、资产和地理数据构建工具
 docs/                   接入、架构、地图来源和开发说明
 vendor/                 随包运行依赖、字体及其许可
@@ -63,6 +81,9 @@ vendor/                 随包运行依赖、字体及其许可
 npm run check
 npm run check:city-assets
 npm run check:city-starter
+npm run check:city-sources
+npm run check:city-plan
+npm run check:city-workflow
 ```
 
 修改固定模型后可运行 `npm run build:city-assets`。这会改变资产哈希，使用这些资产的杭州缓存需要重新生成。地理重建需要对应原始输入和可选 Python/Playwright 依赖，见 [scripts/README.md](scripts/README.md)，不能通过改城市名称复用杭州缓存。
